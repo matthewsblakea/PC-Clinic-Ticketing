@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PCClinicClassLibrary
+﻿namespace PCClinicClassLibrary
 {
     public class Ticket
     {
@@ -21,5 +15,7 @@ namespace PCClinicClassLibrary
             Closed
         }
         public string Location { get; set; }
+        public Device Device { get; set; }
+        public List<RepairLog> RepairLogs { get; set; }
     }
 }

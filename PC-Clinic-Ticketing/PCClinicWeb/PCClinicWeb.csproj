@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.7" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+  </ItemGroup>
+
 </Project>

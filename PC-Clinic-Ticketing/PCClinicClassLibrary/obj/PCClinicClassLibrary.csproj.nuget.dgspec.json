@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PCClinicClassLibrary.csproj": {}
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicClassLibrary.csproj": {}
   },
   "projects": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PCClinicClassLibrary.csproj": {
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PCClinicClassLibrary.csproj",
-        "projectName": "PCClinicClassLibrary",
-        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PCClinicClassLibrary.csproj",
+        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicClassLibrary.csproj",
+        "projectName": "PcClinicClassLibrary",
+        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicClassLibrary.csproj",
         "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
         "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
@@ -50,9 +50,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             }
           },
           "imports": [

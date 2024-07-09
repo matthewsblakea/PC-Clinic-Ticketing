@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PCClinicWebAPI.csproj": {}
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PcClinicWebApi.csproj": {}
   },
   "projects": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PCClinicWebAPI.csproj": {
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PcClinicWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PCClinicWebAPI.csproj",
-        "projectName": "PCClinicWebAPI",
-        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PCClinicWebAPI.csproj",
+        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PcClinicWebApi.csproj",
+        "projectName": "PcClinicWebApi",
+        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\PcClinicWebApi.csproj",
         "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
         "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWebAPI\\obj\\",
         "projectStyle": "PackageReference",
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

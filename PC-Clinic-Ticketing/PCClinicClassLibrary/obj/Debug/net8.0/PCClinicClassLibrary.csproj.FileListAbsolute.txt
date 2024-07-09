@@ -1,0 +1,15 @@
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\bin\Debug\net8.0\PCClinicClassLibrary.deps.json
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\bin\Debug\net8.0\PCClinicClassLibrary.dll
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\bin\Debug\net8.0\PCClinicClassLibrary.pdb
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.csproj.AssemblyReference.cache
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.AssemblyInfoInputs.cache
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.AssemblyInfo.cs
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.csproj.CoreCompileInputs.cache
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.sourcelink.json
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.dll
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\refint\PCClinicClassLibrary.dll
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PCClinicClassLibrary.pdb
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\ref\PCClinicClassLibrary.dll
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\bin\Debug\net8.0\PcClinicClassLibrary.runtimeconfig.json
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PCClinicClassLibrary\obj\Debug\net8.0\PcClinicClassLibrary.genruntimeconfig.cache

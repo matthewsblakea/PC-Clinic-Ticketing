@@ -19,5 +19,7 @@
         public string ModelNumber { get; set; }
         public string SerialNumber { get; set; }
         public string DevicePassword { get; set; }
+        public User User { get; set; }
+        public List<Ticket> Tickets { get; set; }   
     }
 }

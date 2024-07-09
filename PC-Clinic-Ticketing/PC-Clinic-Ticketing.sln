@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCClinicClassLibrary", "PCClinicClassLibrary\PCClinicClassLibrary.csproj", "{77D52E17-BC99-4295-AA1B-D127579186FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicClassLibrary", "PCClinicClassLibrary\PcClinicClassLibrary.csproj", "{77D52E17-BC99-4295-AA1B-D127579186FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCClinicWebAPI", "PCClinicWebAPI\PCClinicWebAPI.csproj", "{C8945990-F5C6-404E-96C0-601C39996F66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicWebApi", "PCClinicWebAPI\PcClinicWebApi.csproj", "{C8945990-F5C6-404E-96C0-601C39996F66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCClinicWeb", "PCClinicWeb\PCClinicWeb.csproj", "{2D634973-CD45-4123-BDCB-8F8669F9379D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicWeb", "PCClinicWeb\PcClinicWeb.csproj", "{2D634973-CD45-4123-BDCB-8F8669F9379D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PCClinicWeb.csproj": {}
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PcClinicWeb.csproj": {}
   },
   "projects": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PCClinicWeb.csproj": {
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PcClinicWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PCClinicWeb.csproj",
-        "projectName": "PCClinicWeb",
-        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PCClinicWeb.csproj",
+        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PcClinicWeb.csproj",
+        "projectName": "PcClinicWeb",
+        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\PcClinicWeb.csproj",
         "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
         "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicWeb\\obj\\",
         "projectStyle": "PackageReference",
@@ -49,6 +49,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
