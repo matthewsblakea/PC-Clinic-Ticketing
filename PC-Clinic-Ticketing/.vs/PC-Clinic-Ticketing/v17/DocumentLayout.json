@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicclasslibrary\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|solutionrelative:pcclinicclasslibrary\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicclasslibrary\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|solutionrelative:pcclinicclasslibrary\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicclasslibrary\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|solutionrelative:pcclinicclasslibrary\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicclasslibrary\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|solutionrelative:pcclinicclasslibrary\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicclasslibrary\\repairlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PCClinicClassLibrary.csproj|solutionrelative:pcclinicclasslibrary\\repairlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 289,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "RepairLog.cs",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\RepairLog.cs",
+              "RelativeDocumentMoniker": "PCClinicClassLibrary\\RepairLog.cs",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\RepairLog.cs",
+              "RelativeToolTip": "PCClinicClassLibrary\\RepairLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:43:02.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Ticket.cs",
               "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\Ticket.cs",
               "RelativeDocumentMoniker": "PCClinicClassLibrary\\Ticket.cs",
               "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\Ticket.cs",
               "RelativeToolTip": "PCClinicClassLibrary\\Ticket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T21:14:19.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T21:14:19.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Device.cs",
               "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\Device.cs",
               "RelativeDocumentMoniker": "PCClinicClassLibrary\\Device.cs",
               "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\Device.cs",
               "RelativeToolTip": "PCClinicClassLibrary\\Device.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T21:11:15.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\User.cs",
               "RelativeDocumentMoniker": "PCClinicClassLibrary\\User.cs",
               "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\User.cs",
               "RelativeToolTip": "PCClinicClassLibrary\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T21:05:53.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2024-07-08T21:05:53.214Z"
             }
           ]
         }

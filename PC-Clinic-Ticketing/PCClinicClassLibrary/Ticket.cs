@@ -8,11 +8,18 @@ namespace PCClinicClassLibrary
 {
     public class Ticket
     {
-        public int TicketID { get; set; }
-        public int DeviceID { get; set; }
+        public int TicketId { get; set; }
+        public int DeviceId { get; set; }
         public string ReportedProblem { get; set; }
         public string TechIntakeNotes { get; set; }
-        public string RepairStatus { get; set; }
+        public enum RepairStatus
+        {
+            Submitted,
+            Received,
+            InProgress,
+            Completed,
+            Closed
+        }
         public string Location { get; set; }
     }
 }

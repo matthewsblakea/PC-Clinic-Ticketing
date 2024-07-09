@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PCClinicClassLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92b98f39c26f962da0d69d386349a9eafb87185e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d301e169d6be72ffc651b1f18ea28e5ad23756a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PCClinicClassLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PCClinicClassLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
