@@ -2,6 +2,7 @@
 {
     public class RepairLog
     {
+        public int RepairLogId { get; set; }
         public int TicketId { get; set; }
         public int UserId { get; set; }
         public enum LogType
