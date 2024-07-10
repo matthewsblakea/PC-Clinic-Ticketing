@@ -1,7 +1,11 @@
-﻿namespace PCClinicClassLibrary
+﻿namespace PcClinicClassLibrary
 {
     public class Ticket
     {
+        public Ticket()
+        {
+            RepairLogs = new List<RepairLog>();
+        }
         public int TicketId { get; set; }
         public int DeviceId { get; set; }
         public string ReportedProblem { get; set; }

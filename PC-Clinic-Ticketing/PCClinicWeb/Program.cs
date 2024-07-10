@@ -1,4 +1,4 @@
-using PCClinicWeb.Components;
+using PcClinicWeb.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,4 +1,4 @@
-namespace PCClinicWebAPI
+namespace PcClinicWebApi
 {
     public class WeatherForecast
     {

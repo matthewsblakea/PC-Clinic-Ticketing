@@ -1,4 +1,4 @@
-﻿namespace PCClinicClassLibrary
+﻿namespace PcClinicClassLibrary
 {
     public class RepairLog
     {

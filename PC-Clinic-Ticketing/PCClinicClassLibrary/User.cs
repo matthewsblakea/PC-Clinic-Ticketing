@@ -1,7 +1,12 @@
-﻿namespace PCClinicClassLibrary
+﻿namespace PcClinicClassLibrary
 {
     public class User
     {
+        public User()
+        {
+            Devices = new List<Device>();
+            RepairLogs = new List<RepairLog>();
+        }
         public int UserId { get; set; }
         public string Name { get; set; }
         public string Phone1 { get; set; }

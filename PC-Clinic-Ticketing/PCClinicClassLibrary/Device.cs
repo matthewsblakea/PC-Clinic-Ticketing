@@ -1,7 +1,11 @@
-﻿namespace PCClinicClassLibrary
+﻿namespace PcClinicClassLibrary
 {
     public class Device
     {
+        public Device()
+        {
+            Tickets = new List<Ticket>();
+        }
         public int DeviceId { get; set; }
         public int UserId { get; set; }
         public enum DeviceType
