@@ -8,10 +8,6 @@ namespace PcClinicConsole
         static void Main(string[] args)
         {
             //This method to create the database is slightly cheat-y and will need to be fixed
-            using (TicketingContext context = new TicketingContext())
-            {
-                context.Database.EnsureCreated();
-            }
 
             GetUsers();
 
