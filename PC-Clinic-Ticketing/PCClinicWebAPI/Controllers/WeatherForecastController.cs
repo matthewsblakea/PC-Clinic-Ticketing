@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PCClinicWebAPI.Controllers
+namespace PcClinicWebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

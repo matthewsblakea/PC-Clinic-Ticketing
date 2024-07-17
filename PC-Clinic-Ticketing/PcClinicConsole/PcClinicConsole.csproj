@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PCClinicClassLibrary\PcClinicClassLibrary.csproj" />
+    <ProjectReference Include="..\PCClinicClassLibrary\PcClinicModels.csproj" />
     <ProjectReference Include="..\PcClinicData\PcClinicData.csproj" />
   </ItemGroup>
 

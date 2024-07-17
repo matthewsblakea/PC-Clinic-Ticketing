@@ -1,6 +1,6 @@
-@PCClinicWebAPI_HostAddress = http://localhost:5015
+@PcClinicWebApi_HostAddress = http://localhost:5159
 
-GET {{PCClinicWebAPI_HostAddress}}/weatherforecast/
+GET {{PcClinicWebApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

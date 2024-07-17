@@ -2590,9 +2590,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicClassLibrary.csproj",
-      "projectName": "PcClinicClassLibrary",
-      "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicClassLibrary.csproj",
+      "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicModels.csproj",
+      "projectName": "PcClinicModels",
+      "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicModels.csproj",
       "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
       "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
