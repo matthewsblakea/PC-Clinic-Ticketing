@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PcClinicUiBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bda66a2362fab155d96225fc03ae4a9599629423")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffad30e66a31e0e59cce7059db7a4af7a095a482")]
 [assembly: System.Reflection.AssemblyProductAttribute("PcClinicUiBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PcClinicUiBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj": {}
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj": {}
   },
   "projects": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj": {
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
+        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
         "projectName": "PcClinicUiBlazor",
-        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
+        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
         "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
         "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\obj\\",
         "projectStyle": "PackageReference",

@@ -55,9 +55,9 @@ D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\PcClinicClassLibrary.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\PcClinicData.dll
-D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\PcClinicClassLibrary.pdb
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\PcClinicData.pdb
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\obj\Debug\net8.0\PcClinicConsole.csproj.AssemblyReference.cache
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\obj\Debug\net8.0\PcClinic.E1D86C29.Up2Date
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\PcClinicModels.dll
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicConsole\bin\Debug\net8.0\PcClinicModels.pdb

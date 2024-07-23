@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "PcClinicConsole/1.0.0": {
         "dependencies": {
-          "PcClinicClassLibrary": "1.0.0",
-          "PcClinicData": "1.0.0"
+          "PcClinicData": "1.0.0",
+          "PcClinicModels": "1.0.0"
         },
         "runtime": {
           "PcClinicConsole.dll": {}
@@ -361,22 +361,22 @@
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
-      "PcClinicClassLibrary/1.0.0": {
+      "PcClinicData/1.0.0": {
+        "dependencies": {
+          "PcClinicModels": "1.0.0"
+        },
+        "runtime": {
+          "PcClinicData.dll": {}
+        }
+      },
+      "PcClinicModels/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.7",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "8.0.7",
           "SQLite": "3.13.0"
         },
         "runtime": {
-          "PcClinicClassLibrary.dll": {}
-        }
-      },
-      "PcClinicData/1.0.0": {
-        "dependencies": {
-          "PcClinicClassLibrary": "1.0.0"
-        },
-        "runtime": {
-          "PcClinicData.dll": {}
+          "PcClinicModels.dll": {}
         }
       }
     }
@@ -562,12 +562,12 @@
       "path": "system.text.json/8.0.4",
       "hashPath": "system.text.json.8.0.4.nupkg.sha512"
     },
-    "PcClinicClassLibrary/1.0.0": {
+    "PcClinicData/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "PcClinicData/1.0.0": {
+    "PcClinicModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
