@@ -21,7 +21,7 @@
         public string TechIntakeNotes { get; set; }
         public repairStatus RepairStatus { get; set; }
         public string Location { get; set; }
-        public DateOnly TicketAge { get; set; }
+        public DateTime TicketTime { get; set; }
         public Device Device { get; set; }
         public List<RepairLog> RepairLogs { get; set; }
     }
