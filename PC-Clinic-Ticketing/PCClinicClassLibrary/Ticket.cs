@@ -2,10 +2,6 @@
 {
     public class Ticket
     {
-        public Ticket()
-        {
-            RepairLogs = new List<RepairLog>();
-        }
         public enum repairStatus
         {
             Submitted = 0,

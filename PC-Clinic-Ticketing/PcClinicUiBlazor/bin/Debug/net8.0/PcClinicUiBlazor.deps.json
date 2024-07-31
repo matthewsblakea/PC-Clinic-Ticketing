@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PcClinicUiBlazor/1.0.0": {
+        "runtime": {
+          "PcClinicUiBlazor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PcClinicUiBlazor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

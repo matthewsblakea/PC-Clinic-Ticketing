@@ -11,7 +11,7 @@
         "projectName": "PcClinicModels",
         "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicModels.csproj",
         "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
-        "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\obj\\",
+        "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PCClinicClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

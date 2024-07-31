@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PcClinicWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffad30e66a31e0e59cce7059db7a4af7a095a482")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2c7eaffe22e7cb2a9872b2cd82078e454b0df1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PcClinicWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PcClinicWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

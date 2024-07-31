@@ -9,9 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicData", "PcClinicDat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicConsole", "PcClinicConsole\PcClinicConsole.csproj", "{145934E1-5B55-4381-B3FB-391138453054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcClinicUiBlazor", "PcClinicUiBlazor\PcClinicUiBlazor.csproj", "{3F635632-689D-4E21-9F81-6B9FCA5BA497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicUiBlazor", "PcClinicUiBlazor\PcClinicUiBlazor.csproj", "{3F635632-689D-4E21-9F81-6B9FCA5BA497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcClinicWebApi", "PcClinicWebApi\PcClinicWebApi.csproj", "{EDDFF6E3-E733-426A-AE35-CF4546757BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicWebApi", "PcClinicWebApi\PcClinicWebApi.csproj", "{EDDFF6E3-E733-426A-AE35-CF4546757BB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PcClinicDb", "PcClinicDb", "{2ABE52B3-D011-4575-B11E-78DA6340DA60}"
+	ProjectSection(SolutionItems) = preProject
+		PcClinicDb\PcClinicDb.db = PcClinicDb\PcClinicDb.db
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

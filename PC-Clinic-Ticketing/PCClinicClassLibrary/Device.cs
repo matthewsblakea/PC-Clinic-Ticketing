@@ -2,10 +2,6 @@
 {
     public class Device
     {
-        public Device()
-        {
-            Tickets = new List<Ticket>();
-        }
         public enum deviceTypes
         {
             Desktop = 0,
