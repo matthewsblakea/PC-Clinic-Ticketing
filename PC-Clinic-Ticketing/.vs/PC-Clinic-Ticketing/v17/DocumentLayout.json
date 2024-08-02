@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\changeownpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\changeownpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\customeraccountupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\customeraccountupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\pages\\ticketupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\pages\\ticketupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\pages\\ticketcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\pages\\homeselect.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\pages\\homeselect.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\ticketcheck.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\ticketcheck.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\pages\\homeselect.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\pages\\homeselect.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\customeraccountupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\customeraccountupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicuiblazor\\components\\changeownpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F635632-689D-4E21-9F81-6B9FCA5BA497}|PcClinicUiBlazor\\PcClinicUiBlazor.csproj|solutionrelative:pcclinicuiblazor\\components\\changeownpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77D52E17-BC99-4295-AA1B-D127579186FD}|PCClinicClassLibrary\\PcClinicModels.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicclasslibrary\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,86 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 289,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChangeOwnPassword.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
-              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
-              "RelativeToolTip": "PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T01:49:11.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerAccountUpdate.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
-              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
-              "RelativeToolTip": "PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T01:48:58.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TicketUpdate.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
-              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
-              "RelativeToolTip": "PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T01:48:10.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TicketCreate.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
-              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
-              "RelativeToolTip": "PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T01:47:22.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TicketCheck.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\TicketCheck.razor",
-              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\TicketCheck.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\TicketCheck.razor",
-              "RelativeToolTip": "PcClinicUiBlazor\\Components\\TicketCheck.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T01:45:52.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PcClinicUiBlazor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
-              "RelativeDocumentMoniker": "PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
-              "RelativeToolTip": "PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-02T00:55:19.968Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -145,12 +67,89 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ChangeOwnPassword.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
+              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
+              "RelativeToolTip": "PcClinicUiBlazor\\Components\\ChangeOwnPassword.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T01:49:11.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerAccountUpdate.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
+              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
+              "RelativeToolTip": "PcClinicUiBlazor\\Components\\CustomerAccountUpdate.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T01:48:58.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketUpdate.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
+              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
+              "RelativeToolTip": "PcClinicUiBlazor\\Components\\Pages\\TicketUpdate.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T01:48:10.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketCreate.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
+              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
+              "RelativeToolTip": "PcClinicUiBlazor\\Components\\Pages\\TicketCreate.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T01:47:22.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TicketCheck.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\TicketCheck.razor",
+              "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\TicketCheck.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\TicketCheck.razor",
+              "RelativeToolTip": "PcClinicUiBlazor\\Components\\TicketCheck.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T01:45:52.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PcClinicUiBlazor.csproj",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
+              "RelativeDocumentMoniker": "PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
+              "RelativeToolTip": "PcClinicUiBlazor\\PcClinicUiBlazor.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-02T00:55:19.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeSelect.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\HomeSelect.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\HomeSelect.razor",
               "RelativeDocumentMoniker": "PcClinicUiBlazor\\Components\\Pages\\HomeSelect.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\HomeSelect.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicUiBlazor\\Components\\Pages\\HomeSelect.razor",
               "RelativeToolTip": "PcClinicUiBlazor\\Components\\Pages\\HomeSelect.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABRAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-02T00:56:03.77Z",
               "EditorCaption": ""
@@ -165,8 +164,7 @@
               "RelativeToolTip": "PcClinicConsole\\Program.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAswBkAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T23:10:00.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T23:10:00.989Z"
             },
             {
               "$type": "Document",
@@ -178,8 +176,7 @@
               "RelativeToolTip": "PcClinicClassLibrary\\Ticket.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T22:18:10.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T22:18:10.957Z"
             },
             {
               "$type": "Document",
