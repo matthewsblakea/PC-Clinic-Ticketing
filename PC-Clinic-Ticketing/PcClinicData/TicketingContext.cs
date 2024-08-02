@@ -16,7 +16,7 @@ namespace PcClinicData
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(
-                "Data Source=D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicDb\\PcClinicDb.db;"
+                "Data Source=C:\\Pc-Clinic-Db\\PcClinicDb.db;"
                 );
         }
 

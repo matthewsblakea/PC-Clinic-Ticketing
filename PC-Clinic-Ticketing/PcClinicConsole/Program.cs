@@ -57,14 +57,14 @@ namespace PcClinicConsole
             };
 
             //Populate Db with sample objects
-            
+            /*
             using (TicketingContext context = new TicketingContext())
             {
                 context.AddUsers(sampleAdmin);
                 context.AddUsers(sampleTechnician);
                 context.AddUsers(sampleCustomer);
             }
-
+            */
                 GetUsers();
 
             void GetUsers()

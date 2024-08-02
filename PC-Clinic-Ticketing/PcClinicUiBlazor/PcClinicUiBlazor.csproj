@@ -6,12 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Components\Pages\HomeSelect.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Components\Pages\HomeSelect.razor" />
-  </ItemGroup>
-
 </Project>
