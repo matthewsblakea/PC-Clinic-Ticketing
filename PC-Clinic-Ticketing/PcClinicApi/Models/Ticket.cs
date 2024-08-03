@@ -2,7 +2,7 @@
 {
     public class Ticket
     {
-        public enum repairStatus
+        public enum RepairStatuses
         {
             Submitted = 0,
             Received = 1,
@@ -15,7 +15,7 @@
         public int DeviceId { get; set; }
         public string ReportedProblem { get; set; }
         public string TechIntakeNotes { get; set; }
-        public repairStatus RepairStatus { get; set; }
+        public RepairStatuses RepairStatus { get; set; }
         public string Location { get; set; }
         public DateTime TicketTime { get; set; }
         public Device Device { get; set; }

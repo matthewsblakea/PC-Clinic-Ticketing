@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj": {}
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj": {}
   },
   "projects": {
-    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj": {
+    "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj",
+        "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj",
         "projectName": "PcClinicFrontend",
-        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj",
+        "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj",
         "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
         "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\obj\\",
         "projectStyle": "PackageReference",

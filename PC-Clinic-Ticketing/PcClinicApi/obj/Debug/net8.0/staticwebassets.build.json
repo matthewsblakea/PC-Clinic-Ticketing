@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9VH2eXxKoqpmOu4JLQgV/eFHO5zxczBGFzLw39bKkjM=",
+  "Source": "PcClinicApi",
+  "BasePath": "_content/PcClinicApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

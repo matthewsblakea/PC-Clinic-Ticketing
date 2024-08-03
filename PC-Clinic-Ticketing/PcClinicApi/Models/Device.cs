@@ -4,7 +4,7 @@ namespace PcClinicApi.Models
 {
     public class Device
     {
-        public enum deviceTypes
+        public enum DeviceTypes
         {
             Desktop = 0,
             AIO = 1,
@@ -19,7 +19,7 @@ namespace PcClinicApi.Models
 
         public int DeviceId { get; set; }
         public int UserId { get; set; }
-        public deviceTypes DeviceType { get; set; }
+        public DeviceTypes DeviceType { get; set; }
         public string ModelNumber { get; set; }
         public string SerialNumber { get; set; }
         public string DevicePassword { get; set; }

@@ -2,7 +2,7 @@
 {
     public class User
     {
-        public enum userType
+        public enum UserTypes
         {
             Customer = 0,
             Technician = 1,
@@ -11,7 +11,7 @@
 
         public int UserId { get; set; }
         public string Password { get; set; }
-        public userType UserType { get; set; }
+        public UserTypes UserType { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Phone1 { get; set; }

@@ -2,7 +2,7 @@
 {
     public class RepairLog
     {
-            public enum logType
+            public enum LogTypes
             {
                 Repair = 0,
                 Contact = 1
@@ -11,7 +11,7 @@
             public int RepairLogId { get; set; }
             public int TicketId { get; set; }
             public int UserId { get; set; }
-            public logType LogType { get; set; }
+            public LogTypes LogType { get; set; }
             public DateTime LogTime { get; set; }
             public string LogNotes { get; set; }
             public User User { get; set; }
