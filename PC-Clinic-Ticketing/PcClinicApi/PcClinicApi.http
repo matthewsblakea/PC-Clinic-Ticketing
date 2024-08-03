@@ -1,0 +1,6 @@
+@PcClinicApi_HostAddress = http://localhost:5148
+
+GET {{PcClinicApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
