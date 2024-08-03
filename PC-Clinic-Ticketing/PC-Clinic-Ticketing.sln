@@ -3,50 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< HEAD
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCClinicClassLibrary", "PCClinicClassLibrary\PCClinicClassLibrary.csproj", "{77D52E17-BC99-4295-AA1B-D127579186FD}"
-=======
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicModels", "PCClinicClassLibrary\PcClinicModels.csproj", "{77D52E17-BC99-4295-AA1B-D127579186FD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicData", "PcClinicData\PcClinicData.csproj", "{48C37E42-4DA6-4E53-A9A1-2126329B388E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicConsole", "PcClinicConsole\PcClinicConsole.csproj", "{145934E1-5B55-4381-B3FB-391138453054}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicUiBlazor", "PcClinicUiBlazor\PcClinicUiBlazor.csproj", "{3F635632-689D-4E21-9F81-6B9FCA5BA497}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicWebApi", "PcClinicWebApi\PcClinicWebApi.csproj", "{EDDFF6E3-E733-426A-AE35-CF4546757BB8}"
->>>>>>> indev
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{77D52E17-BC99-4295-AA1B-D127579186FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77D52E17-BC99-4295-AA1B-D127579186FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77D52E17-BC99-4295-AA1B-D127579186FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77D52E17-BC99-4295-AA1B-D127579186FD}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
-		{48C37E42-4DA6-4E53-A9A1-2126329B388E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48C37E42-4DA6-4E53-A9A1-2126329B388E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48C37E42-4DA6-4E53-A9A1-2126329B388E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48C37E42-4DA6-4E53-A9A1-2126329B388E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{145934E1-5B55-4381-B3FB-391138453054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{145934E1-5B55-4381-B3FB-391138453054}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{145934E1-5B55-4381-B3FB-391138453054}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{145934E1-5B55-4381-B3FB-391138453054}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F635632-689D-4E21-9F81-6B9FCA5BA497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F635632-689D-4E21-9F81-6B9FCA5BA497}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F635632-689D-4E21-9F81-6B9FCA5BA497}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F635632-689D-4E21-9F81-6B9FCA5BA497}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDDFF6E3-E733-426A-AE35-CF4546757BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDDFF6E3-E733-426A-AE35-CF4546757BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDDFF6E3-E733-426A-AE35-CF4546757BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDDFF6E3-E733-426A-AE35-CF4546757BB8}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> indev
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

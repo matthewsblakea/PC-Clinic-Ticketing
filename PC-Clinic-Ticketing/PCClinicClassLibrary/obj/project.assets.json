@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-<<<<<<< HEAD
-      "Microsoft.Data.Sqlite.Core/8.0.6": {
-=======
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -278,7 +275,6 @@
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.7": {
->>>>>>> indev
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.6"
@@ -294,19 +290,11 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore/8.0.6": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.6",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.6",
-=======
       "Microsoft.EntityFrameworkCore/8.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.7",
           "Microsoft.EntityFrameworkCore.Analyzers": "8.0.7",
->>>>>>> indev
           "Microsoft.Extensions.Caching.Memory": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0"
         },
@@ -324,11 +312,7 @@
           "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.6": {
-=======
       "Microsoft.EntityFrameworkCore.Abstractions/8.0.7": {
->>>>>>> indev
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -341,11 +325,7 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.6": {
-=======
       "Microsoft.EntityFrameworkCore.Analyzers/8.0.7": {
->>>>>>> indev
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -354,12 +334,6 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore.Relational/8.0.6": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.6",
-=======
       "Microsoft.EntityFrameworkCore.Design/8.0.6": {
         "type": "package",
         "dependencies": {
@@ -387,7 +361,6 @@
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.7",
->>>>>>> indev
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -401,14 +374,6 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore.Sqlite.Core/8.0.6": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "8.0.6",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.6",
-          "Microsoft.Extensions.DependencyModel": "8.0.0"
-=======
       "Microsoft.EntityFrameworkCore.Sqlite/8.0.7": {
         "type": "package",
         "dependencies": {
@@ -428,7 +393,6 @@
           "Microsoft.Data.Sqlite.Core": "8.0.7",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.7",
           "Microsoft.Extensions.DependencyModel": "8.0.1"
->>>>>>> indev
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
@@ -537,19 +501,11 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-<<<<<<< HEAD
-      "Microsoft.Extensions.DependencyModel/8.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "8.0.0",
-          "System.Text.Json": "8.0.0"
-=======
       "Microsoft.Extensions.DependencyModel/8.0.1": {
         "type": "package",
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0",
           "System.Text.Json": "8.0.4"
->>>>>>> indev
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
@@ -641,8 +597,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Mono.TextTemplating/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -695,7 +649,6 @@
           "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
->>>>>>> indev
       "SQLitePCLRaw.core/2.1.6": {
         "type": "package",
         "dependencies": {
@@ -708,8 +661,6 @@
           "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
         }
       },
-<<<<<<< HEAD
-=======
       "SQLitePCLRaw.lib.e_sqlite3/2.1.6": {
         "type": "package",
         "compile": {
@@ -966,7 +917,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
->>>>>>> indev
       "System.Memory/4.5.3": {
         "type": "package",
         "compile": {
@@ -976,8 +926,6 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-<<<<<<< HEAD
-=======
       "System.Reflection.Metadata/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -1038,7 +986,6 @@
           }
         }
       },
->>>>>>> indev
       "System.Text.Encodings.Web/8.0.0": {
         "type": "package",
         "compile": {
@@ -1061,11 +1008,7 @@
           }
         }
       },
-<<<<<<< HEAD
-      "System.Text.Json/8.0.0": {
-=======
       "System.Text.Json/8.0.4": {
->>>>>>> indev
         "type": "package",
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
@@ -1083,8 +1026,6 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "System.Threading.Channels/6.0.0": {
         "type": "package",
@@ -1101,17 +1042,10 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
->>>>>>> indev
       }
     }
   },
   "libraries": {
-<<<<<<< HEAD
-    "Microsoft.Data.Sqlite.Core/8.0.6": {
-      "sha512": "umhZ0ZF2RI81rGFTnYmCxI+Euj4Aqe/6Y4+8CxN9OVJNGDNIqB5laJ3wxQTU8zXCcm2k9F7FL+/6RVoOT4z1Fw==",
-      "type": "package",
-      "path": "microsoft.data.sqlite.core/8.0.6",
-=======
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1586,7 +1520,6 @@
       "sha512": "3H5ht15zKtw9ma9v092kI0gjV+P45EbJPsmnkk/DNVz/yDPPVYSyCGytSatN2dZQ19ZazLg3gUzoBdsoO5V5JQ==",
       "type": "package",
       "path": "microsoft.data.sqlite.core/8.0.7",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1598,16 +1531,6 @@
         "lib/net8.0/Microsoft.Data.Sqlite.xml",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
-<<<<<<< HEAD
-        "microsoft.data.sqlite.core.8.0.6.nupkg.sha512",
-        "microsoft.data.sqlite.core.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore/8.0.6": {
-      "sha512": "Ms5e5QuBAjVIuQsGumeLvkgMiOpnj6wxPvwBIoe1NfTkseWK4NZYztnhgDlpkCPkrUmJEXLv69kl349Ours30Q==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore/8.0.6",
-=======
         "microsoft.data.sqlite.core.8.0.7.nupkg.sha512",
         "microsoft.data.sqlite.core.nuspec"
       ]
@@ -1616,7 +1539,6 @@
       "sha512": "UOyPNAgyzw/E4hUCurqvZxi0WWVLQAGZuntFPzkTXtvJLTqRjKvokvhv+XazAUSODLsU1DZ67GjZ4mT9d82+0g==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/8.0.7",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1625,16 +1547,6 @@
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-<<<<<<< HEAD
-        "microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
-        "microsoft.entityframeworkcore.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.6": {
-      "sha512": "X7wSSBNFRuN8j8M9HDYG7rPpEeyhY+PdJZR9rftmgvsZH0eK5+bZ3b3As8iO4rLEpjsBzDnrgSIY6q2F3HQatw==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.6",
-=======
         "microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
@@ -1643,7 +1555,6 @@
       "sha512": "DHX6nxcg4/tpWfTjAleKrXveDiNFY/OGOK6nm27GipUXNI2Uofev9cH5SYXmtGIgHWxlvfn754TXN4WnrixOwg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.abstractions/8.0.7",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1651,16 +1562,6 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-<<<<<<< HEAD
-        "microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
-        "microsoft.entityframeworkcore.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.6": {
-      "sha512": "fDNtuQ4lAaPaCOlsrwUck/GvnF4QLeDpMmE1L5QtxZpMSmWfnL2/vk8sDL9OVTWcfprooI9V5MNpIx3/Tq5ehg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.6",
-=======
         "microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
@@ -1669,7 +1570,6 @@
       "sha512": "nerD0vEOYJVhVapamRVH9DrUYbDNMJ5bPfWze4SibDDaDaekzgwQqBht97/tV+8pgdKoPAXmtiJsB+lDajwVrQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.analyzers/8.0.7",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1677,16 +1577,6 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "docs/PACKAGE.md",
         "lib/netstandard2.0/_._",
-<<<<<<< HEAD
-        "microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
-        "microsoft.entityframeworkcore.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.6": {
-      "sha512": "chhfmLusCGLGvNYtvMji6KGQlduPDnJsStG/LjS8qJhFWJDDzTZpSr2LHowewcxMrMo/Axc6Jwe+WwSi/vlkTg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/8.0.6",
-=======
         "microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
@@ -1711,7 +1601,6 @@
       "sha512": "Hn86yScnW+VXb+A2LGrVGkGmjsQ9KLWR0T8GQBEcESWk8u9JYhBiRtdxz76Aq0ir82Ei48sLEZTN4VE0sJ3yIg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/8.0.7",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1719,16 +1608,6 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.xml",
-<<<<<<< HEAD
-        "microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
-        "microsoft.entityframeworkcore.relational.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Sqlite.Core/8.0.6": {
-      "sha512": "87xfPtqSouxWWdynYZv/rubd0rOUeiN9+XeoMWQzpZm/5svH1TuvzFODGIY0zKuXS18NiOFyHl9N6///eaEs/Q==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlite.core/8.0.6",
-=======
         "microsoft.entityframeworkcore.relational.8.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
@@ -1751,7 +1630,6 @@
       "sha512": "pqjQey+EEmsLwTv4vGeSGFw4o6nGLFdEM3ii2FCjfb0YZd3+tqX4O5jNZE/2+Y9rN4QQcbsb/8Cf6NIoyuKZng==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlite.core/8.0.7",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1759,11 +1637,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Sqlite.xml",
-<<<<<<< HEAD
-        "microsoft.entityframeworkcore.sqlite.core.8.0.6.nupkg.sha512",
-=======
         "microsoft.entityframeworkcore.sqlite.core.8.0.7.nupkg.sha512",
->>>>>>> indev
         "microsoft.entityframeworkcore.sqlite.core.nuspec"
       ]
     },
@@ -1921,17 +1795,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
-    "Microsoft.Extensions.DependencyModel/8.0.0": {
-      "sha512": "NSmDw3K0ozNDgShSIpsZcbFIzBX4w28nDag+TfaQujkXGazBm+lid5onlWoCBy4VsLxqnnKjEBbGSJVWJMf43g==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencymodel/8.0.0",
-=======
     "Microsoft.Extensions.DependencyModel/8.0.1": {
       "sha512": "5Ou6varcxLBzQ+Agfm0k0pnH7vrEITYlXMDuE6s7ZHlZHz6/G8XJ3iISZDr5rfwfge6RnXJ1+Wc479mMn52vjA==",
       "type": "package",
       "path": "microsoft.extensions.dependencymodel/8.0.1",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1953,11 +1820,7 @@
         "lib/net8.0/Microsoft.Extensions.DependencyModel.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
-<<<<<<< HEAD
-        "microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
-=======
         "microsoft.extensions.dependencymodel.8.0.1.nupkg.sha512",
->>>>>>> indev
         "microsoft.extensions.dependencymodel.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2144,8 +2007,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
-=======
     "Mono.TextTemplating/2.2.1": {
       "sha512": "KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "type": "package",
@@ -2200,7 +2061,6 @@
         "sqlitepclraw.bundle_e_sqlite3.nuspec"
       ]
     },
->>>>>>> indev
     "SQLitePCLRaw.core/2.1.6": {
       "sha512": "wO6v9GeMx9CUngAet8hbO7xdm+M42p1XeJq47ogyRoYSvNSp0NGLI+MgC0bhrMk9C17MTVFlLiN6ylyExLCc5w==",
       "type": "package",
@@ -2213,8 +2073,6 @@
         "sqlitepclraw.core.nuspec"
       ]
     },
-<<<<<<< HEAD
-=======
     "SQLitePCLRaw.lib.e_sqlite3/2.1.6": {
       "sha512": "2ObJJLkIUIxRpOUlZNGuD4rICpBnrBR5anjyfUFQep4hMOIeqW+XGQYzrNmHSVz5xSWZ3klSbh7sFR6UyDj68Q==",
       "type": "package",
@@ -2473,7 +2331,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
->>>>>>> indev
     "System.Memory/4.5.3": {
       "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "type": "package",
@@ -2495,8 +2352,6 @@
         "version.txt"
       ]
     },
-<<<<<<< HEAD
-=======
     "System.Reflection.Metadata/6.0.1": {
       "sha512": "III/lNMSn0ZRBuM9m5Cgbiho5j81u0FAEagFX5ta2DKbljZ3T0IpD8j+BIiHQPeKqJppWS9bGEp6JnKnWKze0g==",
       "type": "package",
@@ -2584,7 +2439,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
->>>>>>> indev
     "System.Text.Encodings.Web/8.0.0": {
       "sha512": "yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
       "type": "package",
@@ -2620,17 +2474,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
-    "System.Text.Json/8.0.0": {
-      "sha512": "OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
-      "type": "package",
-      "path": "system.text.json/8.0.0",
-=======
     "System.Text.Json/8.0.4": {
       "sha512": "bAkhgDJ88XTsqczoxEMliSrpijKZHhbJQldhAmObj/RbrN3sU5dcokuXmWJWsdQAhiMJ9bTayWsL1C9fbbCRhw==",
       "type": "package",
       "path": "system.text.json/8.0.4",
->>>>>>> indev
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2695,12 +2542,6 @@
         "lib/net8.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-<<<<<<< HEAD
-        "system.text.json.8.0.0.nupkg.sha512",
-        "system.text.json.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-=======
         "system.text.json.8.0.4.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
@@ -2732,19 +2573,14 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
->>>>>>> indev
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-<<<<<<< HEAD
-      "Microsoft.EntityFrameworkCore.Sqlite.Core >= 8.0.6"
-=======
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 8.0.7",
       "SQLite >= 3.13.0"
->>>>>>> indev
     ]
   },
   "packageFolders": {
@@ -2754,15 +2590,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PCClinicClassLibrary.csproj",
-      "projectName": "PCClinicClassLibrary",
-      "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PCClinicClassLibrary.csproj",
-=======
       "projectUniqueName": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicModels.csproj",
       "projectName": "PcClinicModels",
       "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\PcClinicModels.csproj",
->>>>>>> indev
       "packagesPath": "C:\\Users\\Blake\\.nuget\\packages\\",
       "outputPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
@@ -2803,11 +2633,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": {
-            "target": "Package",
-            "version": "[8.0.6, )"
-=======
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -2825,7 +2650,6 @@
           "SQLite": {
             "target": "Package",
             "version": "[3.13.0, )"
->>>>>>> indev
           }
         },
         "imports": [
@@ -2844,12 +2668,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
->>>>>>> indev
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PCClinicClassLibrary\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
