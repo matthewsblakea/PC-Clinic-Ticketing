@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using PcClinicApi.Interfaces;
 using PcClinicApi.Models;
 using PcClinicApi.PcClinicContext;
@@ -18,9 +19,11 @@ namespace PcClinicApi.Services
             _mapper = mapper;
         }
 
-        public Task CreateTicketAsync(Ticket ticket)
+        public async Task CreateTicketAsync(Ticket ticket)
         {
-            throw new NotImplementedException();
+            var newTicket = ticket;
+            _context.Tickets.Add(newTicket);
+            await _context.SaveChangesAsync();
         }
 
         public Task DeleteTicketAsync(int ticketId)
@@ -28,9 +31,14 @@ namespace PcClinicApi.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Ticket>> GetAllTicketsAsync()
+        public async Task<IEnumerable<Ticket>> GetAllTicketsAsync()
         {
-            throw new NotImplementedException();
+            var tickets = await _context.Tickets.ToListAsync();
+            if (tickets == null)
+            {
+                throw new Exception(" No tickets found");
+            }
+            return tickets;
         }
 
         public Task<Ticket> GetTicketByIdAsync(int ticketId)

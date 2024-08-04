@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using PcClinicApi.Interfaces;
 using PcClinicApi.Models;
 using PcClinicApi.PcClinicContext;
@@ -18,9 +19,11 @@ namespace PcClinicApi.Services
             _mapper = mapper;
         }
 
-        public Task CreateRepairLogAsync(RepairLog repairLog)
+        public async Task CreateRepairLogAsync(RepairLog repairLog)
         {
-            throw new NotImplementedException();
+            var newRepairLog = repairLog;
+            _context.RepairLogs.Add(newRepairLog);
+            await _context.SaveChangesAsync();
         }
 
         public Task DeleteRepairLogAsync(int repairLogId)
@@ -28,9 +31,14 @@ namespace PcClinicApi.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<RepairLog>> GetAllRepairLogsAsync()
+        public async Task<IEnumerable<RepairLog>> GetAllRepairLogsAsync()
         {
-            throw new NotImplementedException();
+            var repairLogs = await _context.RepairLogs.ToListAsync();
+            if (repairLogs == null)
+            {
+                throw new Exception(" No repair logs found");
+            }
+            return repairLogs;
         }
 
         public Task<RepairLog> GetRepairLogByIdAsync(int id)

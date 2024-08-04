@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using PcClinicApi.Interfaces;
 using PcClinicApi.Models;
 using PcClinicApi.PcClinicContext;
@@ -18,9 +19,11 @@ namespace PcClinicApi.Services
             _mapper = mapper;
         }
 
-        public Task CreateDeviceAsync(Device device)
+        public async Task CreateDeviceAsync(Device device)
         {
-            throw new NotImplementedException();
+            var newDevice = device;
+            _context.Devices.Add(newDevice);
+            await _context.SaveChangesAsync();
         }
 
         public Task DeleteDeviceAsync(int deviceId)
@@ -28,9 +31,14 @@ namespace PcClinicApi.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Device>> GetAllDevicesAsync()
+        public async Task<IEnumerable<Device>> GetAllDevicesAsync()
         {
-            throw new NotImplementedException();
+            var devices = await _context.Devices.ToListAsync();
+            if (devices == null)
+            {
+                throw new Exception(" No devices found");
+            }
+            return devices;
         }
 
         public Task<Device> GetDeviceByIdAsync(int deviceId)

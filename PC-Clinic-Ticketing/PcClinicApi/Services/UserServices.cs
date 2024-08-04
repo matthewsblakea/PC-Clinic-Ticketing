@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using PcClinicApi.Interfaces;
 using PcClinicApi.Models;
 using PcClinicApi.PcClinicContext;
@@ -18,9 +19,11 @@ namespace PcClinicApi.Services
             _mapper = mapper;
         }
 
-        public Task CreateUserAsync(User user)
+        public async Task CreateUserAsync(User user)
         {
-            throw new NotImplementedException();
+            var newUser = user;
+            _context.Users.Add(newUser);
+            await _context.SaveChangesAsync();
         }
 
         public Task DeleteUserAsync(int userId)
@@ -28,9 +31,14 @@ namespace PcClinicApi.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            throw new NotImplementedException();
+            var users = await _context.Users.ToListAsync();
+            if (users == null)
+            {
+                throw new Exception(" No users found");
+            }
+            return users;
         }
 
         public Task<User> GetUserByIdAsync(int userId)
