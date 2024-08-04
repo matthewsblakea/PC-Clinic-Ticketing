@@ -2,6 +2,6 @@
 {
     public class DbSettings
     {
-        public string ConnectionString { get; set; }
+        public string ConnectionString { get; set; } = "Data Source=c:\\PcClinicDb\\PcClinicDb.db";
     }
 }

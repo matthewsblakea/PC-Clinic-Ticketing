@@ -1,4 +1,3 @@
-using PcClinicApi.Models;
 using PcClinicApi.PcClinicContext;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,16 +8,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings"));
-builder.Services.AddSingleton<TicketingContext>();
-
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
 var app = builder.Build();
 
+//Cheaty database creation
+using (TicketingContext context = new())
 {
-    using var scope = app.Services.CreateScope();
-    var context = scope.ServiceProvider;
+    context.Database.EnsureCreated();
 }
 
 // Configure the HTTP request pipeline.

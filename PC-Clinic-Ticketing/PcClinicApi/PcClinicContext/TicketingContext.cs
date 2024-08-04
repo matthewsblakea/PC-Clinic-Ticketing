@@ -7,12 +7,16 @@ namespace PcClinicApi.PcClinicContext
     public class TicketingContext : DbContext
     {
         // DbSettings field to store the connection string
-        private readonly DbSettings _dbSettings;
+        //private readonly DbSettings _dbSettings;
         // Constructor to inject the DbSettings model
+        /*
         public TicketingContext(IOptions<DbSettings> dbSettings)
         {
             _dbSettings = dbSettings.Value;
         }
+        */
+        private readonly DbSettings _dbSettings = new();
+        
 
         //DbSet properties for models
         public DbSet<User> Users { get; set; }
@@ -26,7 +30,7 @@ namespace PcClinicApi.PcClinicContext
             optionsBuilder.UseSqlite(_dbSettings.ConnectionString);
         }
 
-        // Configuring the model for the Todo entity
+        // Configuring the model for the entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
