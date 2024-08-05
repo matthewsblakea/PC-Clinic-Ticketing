@@ -1,13 +1,14 @@
-﻿using PcClinicApi.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using PcClinicApi.Models;
 
 namespace PcClinicApi.Interfaces
 {
     public interface IRepairLogServices
     {
-        Task<IEnumerable<RepairLog>> GetAllRepairLogsAsync();
-        Task<RepairLog> GetRepairLogByIdAsync(int id);
-        Task CreateRepairLogAsync(RepairLog repairLog);
-        Task UpdateRepairLogAsync(int repairLogId, RepairLog repairLog);
-        Task DeleteRepairLogAsync(int repairLogId);
+        Task<ActionResult<IEnumerable<RepairLog>>> GetRepairLogs();
+        Task<ActionResult<RepairLog>> GetRepairLog(int id);
+        Task<IActionResult> PutRepairLog(int id, RepairLog repairLog);
+        Task<ActionResult<RepairLog>> PostRepairLog(RepairLog repairLog);
+        Task<IActionResult> DeleteRepairLog(int id);
     }
 }

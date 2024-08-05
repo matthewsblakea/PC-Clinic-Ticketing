@@ -1,4 +1,6 @@
-using PcClinicApi.PcClinicContext;
+﻿using PcClinicApi.PcClinicContext;
+using PcClinicApi.Controllers;
+using PcClinicApi.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,13 +10,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
-
 //Cheaty database creation
 using (TicketingContext context = new())
 {
     context.Database.EnsureCreated();
 }
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

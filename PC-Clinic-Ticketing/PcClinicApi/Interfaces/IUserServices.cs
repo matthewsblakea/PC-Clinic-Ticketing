@@ -1,13 +1,14 @@
-﻿using PcClinicApi.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using PcClinicApi.Models;
 
 namespace PcClinicApi.Interfaces
 {
     public interface IUserServices
     {
-        Task<IEnumerable<User>> GetAllUsersAsync();
-        Task<User> GetUserByIdAsync(int userId);
-        Task CreateUserAsync(User user);
-        Task UpdateUserAsync(int userId, User user);
-        Task DeleteUserAsync(int userId);
+        Task<ActionResult<IEnumerable<User>>> GetUsers();
+        Task<ActionResult<User>> GetUser(int id);
+        Task<IActionResult> PutUser(int id, User user);
+        Task<ActionResult<User>> PostUser(User user);
+        Task<IActionResult> DeleteUser(int id);
     }
 }
