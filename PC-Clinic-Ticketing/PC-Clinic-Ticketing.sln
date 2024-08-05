@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicApi", "PcClinicApi\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicFrontend", "PcClinicFrontend\PcClinicFrontend.csproj", "{5E426F5D-588E-456D-A11B-4B6C727AEDB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestApp", "ConsoleTestApp\ConsoleTestApp.csproj", "{EF332753-0DC6-4CA3-B9EE-AA94F785AFC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5E426F5D-588E-456D-A11B-4B6C727AEDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E426F5D-588E-456D-A11B-4B6C727AEDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E426F5D-588E-456D-A11B-4B6C727AEDB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF332753-0DC6-4CA3-B9EE-AA94F785AFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF332753-0DC6-4CA3-B9EE-AA94F785AFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF332753-0DC6-4CA3-B9EE-AA94F785AFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF332753-0DC6-4CA3-B9EE-AA94F785AFC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

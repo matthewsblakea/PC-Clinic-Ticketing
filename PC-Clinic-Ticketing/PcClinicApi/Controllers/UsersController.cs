@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Extensions;
 using PcClinicApi.Models;
 using PcClinicApi.PcClinicContext;
 
@@ -26,6 +27,16 @@ namespace PcClinicApi.Controllers
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
+        }
+
+        // GET: api/Users
+        [HttpGet("/techs")]
+        public async Task<ActionResult<IEnumerable<User>>> GetTechs()
+        {
+            ActionResult<IEnumerable<User>> techs = (from x in _context.Users
+                                       where x.UserType == Models.User.UserTypes.Technician
+                                       select x).ToList<User>();
+            return techs;
         }
 
         // GET: api/Users/5
