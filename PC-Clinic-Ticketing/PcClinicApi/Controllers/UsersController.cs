@@ -30,8 +30,8 @@ namespace PcClinicApi.Controllers
         }
 
         // GET: api/Users
-        [HttpGet("/techs")]
-        public async Task<ActionResult<IEnumerable<User>>> GetTechs()
+        [HttpGet("/api/GetTechnicians")]
+        public async Task<ActionResult<IEnumerable<User>>> GetTechnicians()
         {
             ActionResult<IEnumerable<User>> techs = (from x in _context.Users
                                        where x.UserType == Models.User.UserTypes.Technician

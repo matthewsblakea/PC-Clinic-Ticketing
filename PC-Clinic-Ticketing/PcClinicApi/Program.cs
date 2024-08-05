@@ -64,10 +64,131 @@ using (TicketingContext _context = new())
         City = "Cincinnati",
         State = "OH"
     };
-
     context.Add(testAdmin);
     context.Add(testTech);
     context.Add(testCustomer);
+
+    var testDevice1 = new Device()
+    {
+        User = testCustomer,
+        DeviceType = Device.DeviceTypes.Desktop,
+        ModelNumber = "Generic desktop",
+        SerialNumber = "a12345",
+        DevicePassword = "desktoppassword1",
+    };
+    var testTicket1 = new Ticket()
+    {
+        Device = testDevice1,
+        ReportedProblem = "not able to connect to internet",
+        TechIntakeNotes = "wifi adapter or driver issue. diagnose",
+        TicketType = Ticket.TicketTypes.OnSite,
+        RepairStatus = Ticket.RepairStatuses.Received,
+        Location = "",
+        TicketTime = DateTime.Now
+    };
+    /*var testRepairLog1 = new RepairLog()
+    {
+        // The first repair log should be automatically created at the time of ticket creation
+        // and should be populated from "ticket.TechIntakeNotes"
+        // A ticket with the "received" status should only have this first log.
+    };*/
+    context.Add(testDevice1);
+    context.Add(testTicket1);
+
+    var testDevice2 = new Device()
+    {
+        User = testCustomer,
+        DeviceType = Device.DeviceTypes.Laptop,
+        ModelNumber = "Generic laptop",
+        SerialNumber = "b12345",
+        DevicePassword = "laptoppassword2"
+    };
+    var testTicket2 = new Ticket()
+    {
+        Device = testDevice2,
+        ReportedProblem = "hard drive is old",
+        TechIntakeNotes = "replace HDD with SSD and transfer customer data",
+        TicketType = Ticket.TicketTypes.Repair,
+        RepairStatus = Ticket.RepairStatuses.InProgress,
+        Location = "",
+        TicketTime = DateTime.Now
+    };
+    var testRepairLog21 = new RepairLog()
+    {
+        Ticket = testTicket2,
+        User = testTech,
+        LogType = RepairLog.LogTypes.Contact,
+        LogTime = DateTime.Now,
+        LogNotes = "informed customer of ssd recommendation and received consent to purchase and install device",
+    };
+    context.Add(testDevice2);
+    context.Add(testTicket2);
+    context.Add(testRepairLog21);
+
+    var testDevice3 = new Device()
+    {
+        User = testCustomer,
+        DeviceType = Device.DeviceTypes.Phone,
+        ModelNumber = "Generic iphone",
+        SerialNumber = "c12345",
+        DevicePassword = "iphonepassword3"
+    };
+    var testTicket3 = new Ticket()
+    {
+        Device = testDevice3,
+        ReportedProblem = "broken screen",
+        TechIntakeNotes = "order iphone 14 screen and replace the broken component",
+        TicketType = Ticket.TicketTypes.Repair,
+        RepairStatus = Ticket.RepairStatuses.Completed,
+        Location = "",
+        TicketTime = DateTime.Now
+    };
+    var testRepairLog31 = new RepairLog()
+    {
+        Ticket = testTicket3,
+        User = testAdmin,
+        LogType = RepairLog.LogTypes.Repair,
+        LogTime = DateTime.Now,
+        LogNotes = "replaced broken display component with new one"
+    };
+    var testRepairLog32 = new RepairLog()
+    {
+        Ticket = testTicket3,
+        User = testTech,
+        LogType = RepairLog.LogTypes.Contact,
+        LogTime = DateTime.Now,
+        LogNotes = "contacted customer that repair is complete and they can pick up their phone"
+    };
+    context.Add(testDevice3);
+    context.Add(testTicket3);
+    context.Add(testRepairLog31);
+    context.Add(testRepairLog32);
+
+    var testDevice4 = new Device()
+    {
+        User = testCustomer,
+        DeviceType = Device.DeviceTypes.Phone,
+        ModelNumber = "Generic samsung galaxy",
+        SerialNumber = "d12345",
+        DevicePassword = "samsungpassword4"
+    };
+    var testTicket4 = new Ticket()
+    {
+        Device = testDevice4,
+        ReportedProblem = "questions about applications",
+        TechIntakeNotes = "answered customer questions about applications",
+        TicketType = Ticket.TicketTypes.Consultation,
+        RepairStatus = Ticket.RepairStatuses.Closed,
+        Location = "",
+        TicketTime = DateTime.Now
+    };
+    /*var testRepairLog41 = new RepairLog()
+    {
+        // The last repair log should be automatically created at the time of ticket closure
+        // and should be populated with a message like "Ticket closed"
+    };*/
+    context.Add(testDevice4);
+    context.Add(testTicket4);
 
     context.SaveChanges();
     /*var users = _context.Users.ToList();

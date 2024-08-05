@@ -2,19 +2,26 @@
 {
     public class Ticket
     {
+        public enum TicketTypes
+        {
+            Consultation = 0,
+            Repair = 1,
+            OnSite = 2
+        }
+        
         public enum RepairStatuses
         {
-            Submitted = 0,
-            Received = 1,
-            InProgress = 2,
-            Completed = 3,
-            Closed = 4
+            Received = 0,
+            InProgress = 1,
+            Completed = 2,
+            Closed = 3
         }
 
         public int TicketId { get; set; }
         public int DeviceId { get; set; }
         public string ReportedProblem { get; set; }
         public string TechIntakeNotes { get; set; }
+        public TicketTypes TicketType { get; set; }
         public RepairStatuses RepairStatus { get; set; }
         public string? Location { get; set; }
         public DateTime TicketTime { get; set; }

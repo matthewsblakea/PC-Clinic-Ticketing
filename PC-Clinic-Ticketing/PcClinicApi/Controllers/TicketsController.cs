@@ -42,6 +42,16 @@ namespace PcClinicApi.Controllers
             return ticket;
         }
 
+        // GET: api/Tickets
+        [HttpGet("/api/GetOpenTickets")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetOpenTickets()
+        {
+            ActionResult<IEnumerable<Ticket>> openTickets = (from x in _context.Tickets
+                                                     where x.RepairStatus != Models.Ticket.RepairStatuses.Closed
+                                                     select x).ToList<Ticket>();
+            return openTickets;
+        }
+
         // PUT: api/Tickets/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

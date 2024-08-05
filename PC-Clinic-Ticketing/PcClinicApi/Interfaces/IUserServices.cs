@@ -7,6 +7,7 @@ namespace PcClinicApi.Interfaces
     {
         Task<ActionResult<IEnumerable<User>>> GetUsers();
         Task<ActionResult<User>> GetUser(int id);
+        Task<ActionResult<IEnumerable<User>>> GetTechnicians();
         Task<IActionResult> PutUser(int id, User user);
         Task<ActionResult<User>> PostUser(User user);
         Task<IActionResult> DeleteUser(int id);
