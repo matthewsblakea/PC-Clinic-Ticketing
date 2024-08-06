@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\controllers\\devicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\controllers\\devicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\interfaces\\iticketservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\interfaces\\iticketservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\interfaces\\irepairlogservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\interfaces\\irepairlogservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\interfaces\\ideviceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\interfaces\\ideviceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicfrontend\\components\\customersearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|solutionrelative:pcclinicfrontend\\components\\customersearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,118 +39,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DevicesController.cs",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\DevicesController.cs",
-              "RelativeDocumentMoniker": "PcClinicApi\\Controllers\\DevicesController.cs",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\DevicesController.cs",
-              "RelativeToolTip": "PcClinicApi\\Controllers\\DevicesController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAADwvywAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:21:08.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserServices.cs",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\IUserServices.cs",
-              "RelativeDocumentMoniker": "PcClinicApi\\Interfaces\\IUserServices.cs",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\IUserServices.cs",
-              "RelativeToolTip": "PcClinicApi\\Interfaces\\IUserServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:20:55.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITicketServices.cs",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\ITicketServices.cs",
-              "RelativeDocumentMoniker": "PcClinicApi\\Interfaces\\ITicketServices.cs",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\ITicketServices.cs",
-              "RelativeToolTip": "PcClinicApi\\Interfaces\\ITicketServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:20:50.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRepairLogServices.cs",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\IRepairLogServices.cs",
-              "RelativeDocumentMoniker": "PcClinicApi\\Interfaces\\IRepairLogServices.cs",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\IRepairLogServices.cs",
-              "RelativeToolTip": "PcClinicApi\\Interfaces\\IRepairLogServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:20:46.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDeviceServices.cs",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\IDeviceServices.cs",
-              "RelativeDocumentMoniker": "PcClinicApi\\Interfaces\\IDeviceServices.cs",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Interfaces\\IDeviceServices.cs",
-              "RelativeToolTip": "PcClinicApi\\Interfaces\\IDeviceServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:20:37.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerSearch.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\Components\\CustomerSearch.razor",
-              "RelativeDocumentMoniker": "PcClinicFrontend\\Components\\CustomerSearch.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\Components\\CustomerSearch.razor",
-              "RelativeToolTip": "PcClinicFrontend\\Components\\CustomerSearch.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-05T23:15:38.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Program.cs",
-              "RelativeDocumentMoniker": "PcClinicApi\\Program.cs",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Program.cs",
-              "RelativeToolTip": "PcClinicApi\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T22:57:03.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "PcClinicApi\\Models\\User.cs",
               "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Models\\User.cs",
               "RelativeToolTip": "PcClinicApi\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T22:56:21.374Z",
+              "WhenOpened": "2024-08-06T01:38:58.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "PcClinicApi\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\UsersController.cs",
               "RelativeToolTip": "PcClinicApi\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAcwDMAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T22:51:43.34Z",
+              "WhenOpened": "2024-08-06T01:38:52.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DevicesController.cs",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\DevicesController.cs",
+              "RelativeDocumentMoniker": "PcClinicApi\\Controllers\\DevicesController.cs",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\DevicesController.cs",
+              "RelativeToolTip": "PcClinicApi\\Controllers\\DevicesController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAswCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:27:03.663Z",
               "EditorCaption": ""
             }
           ]

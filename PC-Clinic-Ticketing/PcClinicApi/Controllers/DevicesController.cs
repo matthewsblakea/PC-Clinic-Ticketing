@@ -42,19 +42,17 @@ namespace PcClinicApi.Controllers
             return device;
         }
 
-        // Fix this method
-        /*// GET: api/Devices
+        // GET: api/Devices
         [HttpGet("/api/GetDevicesByCustomerPhone")]
         public async Task<ActionResult<IEnumerable<Device>>> GetDevicesByCustomerPhone(string phone)
         {
             var customerId = await _context.Users.Where(x => x.Phone == phone).Select(x => x.UserId).FirstOrDefaultAsync();
-            var customer = await _context.Users.FindAsync(customerId);
-            
+
             ActionResult<IEnumerable<Device>> devices = await (from x in _context.Devices
                                                            where x.UserId == customerId
                                                            select x).ToListAsync();
             return devices;
-        }*/
+        }
 
         // PUT: api/Devices/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
