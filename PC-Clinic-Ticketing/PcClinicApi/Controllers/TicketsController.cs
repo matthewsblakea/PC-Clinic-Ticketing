@@ -46,10 +46,36 @@ namespace PcClinicApi.Controllers
         [HttpGet("/api/GetOpenTickets")]
         public async Task<ActionResult<IEnumerable<Ticket>>> GetOpenTickets()
         {
-            ActionResult<IEnumerable<Ticket>> openTickets = (from x in _context.Tickets
-                                                     where x.RepairStatus != Models.Ticket.RepairStatuses.Closed
-                                                     select x).ToList<Ticket>();
+            ActionResult<IEnumerable<Ticket>> openTickets = await (from x in _context.Tickets
+                                                     where x.RepairStatus != Ticket.RepairStatuses.Closed
+                                                     select x).ToListAsync<Ticket>();
             return openTickets;
+        }
+
+        // GET: api/Tickets
+        [HttpGet("/api/GetClosedTickets")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetClosedTickets()
+        {
+            ActionResult<IEnumerable<Ticket>> closedTickets = await (from x in _context.Tickets
+                                                                   where x.RepairStatus == Ticket.RepairStatuses.Closed
+                                                                   select x).ToListAsync<Ticket>();
+            return closedTickets;
+        }
+
+        // GET: api/Tickets
+        [HttpGet("/api/GetTicketsByDeviceId")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsByDeviceId(int deviceId)
+        {
+            ActionResult<IEnumerable<Ticket>> tickets = await _context.Tickets.Where(x => x.DeviceId == deviceId).ToListAsync();
+            return tickets;
+        }
+
+        // GET: api/Tickets
+        [HttpGet("/api/GetTicketIdsByDeviceId")]
+        public async Task<ActionResult<IEnumerable<int>>> GetTicketIdsByDeviceId(int deviceId)
+        {
+            ActionResult<IEnumerable<int>> ticketIds = await _context.Tickets.Where(x => x.DeviceId == deviceId).Select(x => x.TicketId).ToListAsync();
+            return ticketIds;
         }
 
         // PUT: api/Tickets/5

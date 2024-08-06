@@ -125,12 +125,76 @@ namespace PcClinicApi.Controllers
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
+        // POST: api/Users
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost("/api/AddCustomer")]
+        public async Task<ActionResult<User>> AddCustomer(User user)
+        {
+            _context.Users.Add(user);
+            user.UserType = Models.User.UserTypes.Customer;
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+        }
+
+        // POST: api/Users
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost("/api/addTechnician")]
+        public async Task<ActionResult<User>> AddTechnician(User user)
+        {
+            _context.Users.Add(user);
+            user.UserType = Models.User.UserTypes.Technician;
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+        }
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
             if (user == null)
+            {
+                return NotFound();
+            }
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        // DELETE: api/Users/5
+        [HttpDelete("/api/DeleteCustomer/{id}")]
+        public async Task<IActionResult> DeleteCustomer(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            if (user.UserType != Models.User.UserTypes.Customer)
+            {
+                return NotFound();
+            }
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        // DELETE: api/Users/5
+        [HttpDelete("/api/DeleteTechnician/{id}")]
+        public async Task<IActionResult> DeleteTechnician(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            if (user.UserType != Models.User.UserTypes.Technician)
             {
                 return NotFound();
             }

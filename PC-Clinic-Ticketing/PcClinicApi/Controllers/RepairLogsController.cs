@@ -42,6 +42,24 @@ namespace PcClinicApi.Controllers
             return repairLog;
         }
 
+        // GET: api/RepairLogs
+        [HttpGet("/api/GetRepairLogsByTicketId")]
+        public async Task<ActionResult<IEnumerable<RepairLog>>> GetRepairLogsByTicketId(int ticketId)
+        {
+            ActionResult<IEnumerable<RepairLog>> repairLogs= await _context.RepairLogs.Where(x => x.TicketId == ticketId).ToListAsync();
+
+            return repairLogs;
+        }
+
+        // GET: api/RepairLogs
+        [HttpGet("/api/GetRepairLogsByTechnicianId")]
+        public async Task<ActionResult<IEnumerable<RepairLog>>> GetDevicesByTechnicianId(int userId)
+        {
+            ActionResult<IEnumerable<RepairLog>> repairLogs = await _context.RepairLogs.Where(x => x.UserId == userId).ToListAsync();
+
+            return repairLogs;
+        }
+
         // PUT: api/RepairLogs/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

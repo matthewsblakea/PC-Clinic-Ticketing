@@ -43,15 +43,33 @@ namespace PcClinicApi.Controllers
         }
 
         // GET: api/Devices
-        [HttpGet("/api/GetDevicesByCustomerPhone")]
-        public async Task<ActionResult<IEnumerable<Device>>> GetDevicesByCustomerPhone(string phone)
+        [HttpGet("/api/GetDevicesByPhone")]
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevicesByPhone(string phone)
         {
-            var customerId = await _context.Users.Where(x => x.Phone == phone).Select(x => x.UserId).FirstOrDefaultAsync();
+            var userId = await _context.Users.Where(x => x.Phone == phone).Select(x => x.UserId).FirstOrDefaultAsync();
 
             ActionResult<IEnumerable<Device>> devices = await (from x in _context.Devices
-                                                           where x.UserId == customerId
+                                                           where x.UserId == userId
                                                            select x).ToListAsync();
             return devices;
+        }
+
+        // GET: api/Devices
+        [HttpGet("/api/GetDevicesByUserId")]
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevicesByUserId(int userId)
+        {
+            ActionResult<IEnumerable<Device>> devices = await _context.Devices.Where(x => x.UserId == userId).ToListAsync();
+
+            return devices;
+        }
+
+        // GET: api/Devices
+        [HttpGet("/api/GetDeviceIdsByUserId")]
+        public async Task<ActionResult<IEnumerable<int>>> GetDeviceIdsByUserId(int userId)
+        {
+            ActionResult<IEnumerable<int>> deviceIds = await _context.Devices.Where(x => x.UserId == userId).Select(x => x.DeviceId).ToListAsync();
+
+            return deviceIds;
         }
 
         // PUT: api/Devices/5
