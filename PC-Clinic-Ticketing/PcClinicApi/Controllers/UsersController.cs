@@ -29,16 +29,6 @@ namespace PcClinicApi.Controllers
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users
-        [HttpGet("/api/GetTechnicians")]
-        public async Task<ActionResult<IEnumerable<User>>> GetTechnicians()
-        {
-            ActionResult<IEnumerable<User>> techs = (from x in _context.Users
-                                       where x.UserType == Models.User.UserTypes.Technician
-                                       select x).ToList<User>();
-            return techs;
-        }
-
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
@@ -51,6 +41,46 @@ namespace PcClinicApi.Controllers
             }
 
             return user;
+        }
+
+        // GET: api/Users
+        [HttpGet("/api/GetTechnicians")]
+        public async Task<ActionResult<IEnumerable<User>>> GetTechnicians()
+        {
+            ActionResult<IEnumerable<User>> techs = await (from x in _context.Users
+                                       where x.UserType == Models.User.UserTypes.Technician
+                                       select x).ToListAsync();
+            return techs;
+        }
+
+        // GET: api/Users
+        [HttpGet("/api/GetCustomers")]
+        public async Task<ActionResult<IEnumerable<User>>> GetCustomers()
+        {
+            ActionResult<IEnumerable<User>> customers = await (from x in _context.Users
+                                                     where x.UserType == Models.User.UserTypes.Customer
+                                                     select x).ToListAsync();
+            return customers;
+        }
+
+        // GET: api/Users
+        [HttpGet("/api/GetCustomerByPhone")]
+        public async Task<ActionResult<User>> GetCustomerByPhone(string phone)
+        {
+            var customer = await _context.Users.Where(x => x.Phone == phone).FirstOrDefaultAsync();
+
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            else if (customer.UserType == Models.User.UserTypes.Customer)
+            {
+                return customer;
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
         // PUT: api/Users/5

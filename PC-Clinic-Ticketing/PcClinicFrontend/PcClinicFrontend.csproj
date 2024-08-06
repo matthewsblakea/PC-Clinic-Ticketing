@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Components\CustomerSearch.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Components\CustomerSearch.razor" />
+  </ItemGroup>
+
 </Project>
