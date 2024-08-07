@@ -10,6 +10,7 @@ namespace PcClinicApi.Interfaces
         Task<ActionResult<IEnumerable<User>>> GetTechnicians();
         Task<ActionResult<IEnumerable<User>>> GetCustomers();
         Task<ActionResult<User>> GetCustomerByPhone(string phone);
+        Task<ActionResult<int>> GetCustomerIdByPhone(string phone);
         Task<IActionResult> PutUser(int id, User user);
         Task<ActionResult<User>> PostUser(User user);
         Task<ActionResult<User>> AddCustomer(User user);

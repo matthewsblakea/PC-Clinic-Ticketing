@@ -83,6 +83,27 @@ namespace PcClinicApi.Controllers
             }
         }
 
+        // GET: api/Users
+        [HttpGet("/api/GetCustomerIdByPhone")]
+        public async Task<ActionResult<int>> GetCustomerIdByPhone(string phone)
+        {
+            var customer = await _context.Users.Where(x => x.Phone == phone).FirstOrDefaultAsync();
+
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            else if (customer.UserType == Models.User.UserTypes.Customer)
+            {
+                var customerId = customer.UserId;
+                return customerId;
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

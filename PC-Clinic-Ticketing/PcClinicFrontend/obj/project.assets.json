@@ -2547,6 +2547,27 @@
             "rid": "win"
           }
         }
+      },
+      "PcClinicApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "8.0.7",
+          "Microsoft.EntityFrameworkCore": "8.0.7",
+          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.7",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.3",
+          "SQLite": "3.13.0",
+          "Swashbuckle.AspNetCore": "6.7.0"
+        },
+        "compile": {
+          "bin/placeholder/PcClinicApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PcClinicApi.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -7160,6 +7181,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "PcClinicApi/1.0.0": {
+      "type": "project",
+      "path": "../PcClinicApi/PcClinicApi.csproj",
+      "msbuildProject": "../PcClinicApi/PcClinicApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7170,6 +7196,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.3",
+      "PcClinicApi >= 1.0.0",
       "SQLite >= 3.13.0",
       "Swashbuckle.AspNetCore >= 6.7.0"
     ]
@@ -7206,7 +7233,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicApi\\PcClinicApi.csproj": {
+              "projectPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicApi\\PcClinicApi.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
