@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "285UV1wbBSk=",
+  "dgSpecHash": "0bKU02v7jeM=",
   "success": true,
   "projectFilePath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicApi\\PcClinicApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Blake\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Blake\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Blake\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Blake\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PcClinicFrontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c73eec965b40b45cdc37b3bb356340e783e7e3c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f0db90a407ed45f9624302666b4910e28868f7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PcClinicFrontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PcClinicFrontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
