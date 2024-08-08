@@ -1,11 +1,28 @@
 using PcClinicFrontend.Components;
+using PcClinicApi.Models;
+using PcClinicApi.PcClinicContext;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//
+var connectionString = builder.Configuration.GetConnectionString("TicketingContext");
+//
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+//
+builder.Services.AddDbContextFactory<TicketingContext>(options => options.UseSqlite(connectionString));
+//
 
+//
+builder.Services.AddHttpClient("PcClinicApi", httpClient =>
+{
+    httpClient.BaseAddress = new Uri("https://localhost:7224/");
+});
+//
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicfrontend\\pcclinicfrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|solutionrelative:pcclinicfrontend\\pcclinicfrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicfrontend\\components\\pages\\getcustomer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|solutionrelative:pcclinicfrontend\\components\\pages\\getcustomer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicfrontend\\components\\devicecheckcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E426F5D-588E-456D-A11B-4B6C727AEDB7}|PcClinicFrontend\\PcClinicFrontend.csproj|solutionrelative:pcclinicfrontend\\components\\devicecheckcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|d:\\docs\\codeky\\projects\\pc-clinic-ticketing\\pc-clinic-ticketing\\pcclinicapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7795878-E257-4058-81E6-9E13F8C324B5}|PcClinicApi\\PcClinicApi.csproj|solutionrelative:pcclinicapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 871,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PcClinicFrontend",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj",
-              "RelativeDocumentMoniker": "PcClinicFrontend\\PcClinicFrontend.csproj",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\PcClinicFrontend.csproj",
-              "RelativeToolTip": "PcClinicFrontend\\PcClinicFrontend.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-07T18:46:13.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeviceCheckComponent.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\Components\\DeviceCheckComponent.razor",
-              "RelativeDocumentMoniker": "PcClinicFrontend\\Components\\DeviceCheckComponent.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\Components\\DeviceCheckComponent.razor",
-              "RelativeToolTip": "PcClinicFrontend\\Components\\DeviceCheckComponent.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T18:31:16.887Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
@@ -57,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetCustomer.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\Components\\Pages\\GetCustomer.razor",
+              "RelativeDocumentMoniker": "PcClinicFrontend\\Components\\Pages\\GetCustomer.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\Components\\Pages\\GetCustomer.razor",
+              "RelativeToolTip": "PcClinicFrontend\\Components\\Pages\\GetCustomer.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T00:54:02.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "PcClinicApi\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "PcClinicApi\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswD0AAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T01:18:55.018Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -262,3 +262,8 @@ D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\obj\Debug\net8.0\PcClinicFrontend.csproj.AssemblyReference.cache
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\obj\Debug\net8.0\PcClinicFrontend.MvcApplicationPartsAssemblyInfo.cs
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\obj\Debug\net8.0\PcClinic.06FA843D.Up2Date
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\bin\Debug\net8.0\PcClinicApi.deps.json
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\bin\Debug\net8.0\PcClinicApi.runtimeconfig.json
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\bin\Debug\net8.0\PcClinicApi.exe
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\bin\Debug\net8.0\PcClinicApi.dll
+D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicFrontend\bin\Debug\net8.0\PcClinicApi.pdb

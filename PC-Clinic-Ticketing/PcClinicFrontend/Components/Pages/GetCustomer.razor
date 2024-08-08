@@ -1,0 +1,32 @@
+@using PcClinicApi.Models
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory HttpClientFactory
+
+<ul>
+    @foreach (var customer in users)
+    {
+        <li>
+        @customer.UserId
+        @customer.FirstName
+        @customer.LastName
+        @customer.Password
+        @customer.Phone
+        @customer.Email
+        @customer.Address
+        @customer.City
+        @customer.State
+        @customer.UserType
+        </li>
+    }
+</ul>
+
+@code{
+    private IEnumerable<User>? users = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("PcClinicApi");
+        users = await client.GetFromJsonAsync<IEnumerable<User>>("/GetCustomers");
+    }
+}

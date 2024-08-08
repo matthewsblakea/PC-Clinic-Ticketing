@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "KDI9mmNs5rsIa6paEfFmiep52N4AoPz8mf1RYHqSxWg=",
+  "Hash": "jdznLcud8r+zogfRSkzEGRaf8wpd0PSSs0ZSvQOVywU=",
   "Source": "PcClinicFrontend",
   "BasePath": "_content/PcClinicFrontend",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicApi\\PcClinicApi.csproj",
+      "Version": 2,
+      "Source": "PcClinicApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "PcClinicFrontend\\wwwroot",

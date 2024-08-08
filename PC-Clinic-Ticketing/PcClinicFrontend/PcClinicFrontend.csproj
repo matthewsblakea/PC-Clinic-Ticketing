@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Components\CustomerSearch.razor" />
+    <Content Remove="Components\AddUser.razor" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Components\CustomerSearch.razor" />
+    <None Include="Components\AddUser.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,10 +29,20 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
     <PackageReference Include="SQLite" Version="3.13.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PcClinicApi\PcClinicApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Components\AddUser.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Components\AddUser.razor" />
   </ItemGroup>
 
 </Project>
