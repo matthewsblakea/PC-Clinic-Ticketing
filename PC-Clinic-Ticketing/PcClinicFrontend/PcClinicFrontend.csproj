@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Components\AddUser.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Components\AddUser.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
@@ -35,14 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PcClinicApi\PcClinicApi.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Components\AddUser.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Components\AddUser.razor" />
   </ItemGroup>
 
 </Project>

@@ -2,30 +2,10 @@
 
 <h3>Technician Homepage</h3>
 
-<p>Create ticket -></p>
-
-<p>Check open ticket queue ->. Leads to same page as search tickets but with open tickets as parameter</p>
-
-<p>Search tickets -></p>
-
-<CustomerAccountUpdateComponent></CustomerAccountUpdateComponent>
-
-<ChangeOwnPasswordComponent></ChangeOwnPasswordComponent>
-
-@{/* Tech home screen will be an actual home screen that leads to other screens because 
- * there are too many functions that need to be built in and it makes sense to separate them.
- * 
- * Change own password (on same page)
- * Manage customer acct info (on same page)
- * Check closed tickets by search parameter e.g. cust acct info or ticket #
- * Check open ticket queue, can search by search parameter
- * Create ticket (can add customer acct to Db here too)
- * Update ticket (multiple paths lead here, pass in different parameters depending on source)
- * 
- * Known-needed components:
- * change own password
- * customer info updater 
- * check ticket Db by search parameter */}
+<GetCustomers></GetCustomers>
+<GetDevices></GetDevices>
+<GetTickets></GetTickets>
+<GetRepairLogs></GetRepairLogs>
 
 @code {
 

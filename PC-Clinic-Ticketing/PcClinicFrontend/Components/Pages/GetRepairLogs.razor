@@ -1,0 +1,49 @@
+﻿@using PcClinicApi.Models
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory HttpClientFactory
+@rendermode InteractiveServer
+
+@if (repairLogs == null)
+{
+    <p>Customer accounts not found</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>RepairLogId</th>
+                <th>TicketId</th>
+                <th>TechnicianId</th>
+                <th>Log type</th>
+                <th>Log time</th>
+                <th>Log notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (RepairLog repairLog in repairLogs)
+            {
+                <tr>
+                    <td>@repairLog.RepairLogId</td>
+                    <td>@repairLog.TicketId</td>
+                    <td>@repairLog.UserId</td>
+                    <td>@repairLog.LogType</td>
+                    <td>@repairLog.LogTime</td>
+                    <td>@repairLog.LogNotes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    private List<RepairLog>? repairLogs = new();
+    protected async override Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("PcClinicApi");
+        repairLogs = await client.GetFromJsonAsync<List<RepairLog>>("/api/RepairLogs");
+    }
+}
