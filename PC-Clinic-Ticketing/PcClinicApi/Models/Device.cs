@@ -18,12 +18,12 @@ namespace PcClinicApi.Models
         }
 
         public int DeviceId { get; set; }
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
         public DeviceTypes DeviceType { get; set; }
         public string ModelNumber { get; set; }
         public string SerialNumber { get; set; }
         public string DevicePassword { get; set; }
-        public User User { get; set; }
-        public List<Ticket>? Tickets { get; set; }
+        public virtual User? User { get; set; }
+        public virtual List<Ticket>? Tickets { get; set; }
     }
 }

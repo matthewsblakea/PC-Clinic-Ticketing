@@ -18,14 +18,14 @@
         }
 
         public int TicketId { get; set; }
-        public int DeviceId { get; set; }
+        public int? DeviceId { get; set; }
         public string ReportedProblem { get; set; }
         public string TechIntakeNotes { get; set; }
         public TicketTypes TicketType { get; set; }
         public RepairStatuses RepairStatus { get; set; }
         public string? Location { get; set; }
         public DateTime TicketTime { get; set; }
-        public Device Device { get; set; }
-        public List<RepairLog>? RepairLogs { get; set; }
+        public virtual Device? Device { get; set; }
+        public virtual List<RepairLog>? RepairLogs { get; set; }
     }
 }
