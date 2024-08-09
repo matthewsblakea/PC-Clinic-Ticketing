@@ -2,8 +2,12 @@
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @inject IHttpClientFactory HttpClientFactory
+@rendermode InteractiveServer
 
 <h3>Get customer by phone number</h3>
+
+<input @bind="phone" @bind:event="oninput"/>
+<button @onclick=StateHasChanged>Submit</button>
 
 <table>
     <thead>
@@ -36,11 +40,12 @@
 
 @code {
     //temporarily hard-coded
-    public string phone = "1029384756";
+    public string phone { get; set; } = "1029384756";
+
 
     public User customer = new();
 
-    protected override async Task OnInitializedAsync()
+    protected async Task OnParameterSetAsync() 
     {
         var request = new HttpRequestMessage(HttpMethod.Get, $"https://localhost:7224/GetCustomerByPhone/{phone}");
 

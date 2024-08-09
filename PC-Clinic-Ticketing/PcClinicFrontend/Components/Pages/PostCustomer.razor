@@ -1,0 +1,34 @@
+﻿@using PcClinicApi.Models
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory HttpClientFactory
+@rendermode InteractiveServer
+@page "/Addcustomer"
+
+<h3>Create customer account</h3>
+
+
+
+@code {
+    User customer = new()
+        {
+            UserType = User.UserTypes.Customer,
+            FirstName = "Joe",
+            LastName = "Smith",
+            Phone = "1470258369",
+            Email = "joeschmoe@gmail.com",
+            Address = "4 Fake St",
+            City = "Cincinnati",
+            State = "OH"
+        };
+
+    protected override async Task OnParametersSetAsync()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:7224/api/Users");
+
+        var client = HttpClientFactory.CreateClient();
+
+        var response = await client.PostAsJsonAsync($"https://localhost:7224/api/Users", customer);
+    }
+    
+}

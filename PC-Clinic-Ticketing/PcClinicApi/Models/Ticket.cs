@@ -26,6 +26,6 @@
         public string? Location { get; set; }
         public DateTime TicketTime { get; set; }
         public Device Device { get; set; }
-        public List<RepairLog> RepairLogs { get; set; }
+        public List<RepairLog>? RepairLogs { get; set; }
     }
 }

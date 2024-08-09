@@ -24,6 +24,6 @@ namespace PcClinicApi.Models
         public string SerialNumber { get; set; }
         public string DevicePassword { get; set; }
         public User User { get; set; }
-        public List<Ticket> Tickets { get; set; }
+        public List<Ticket>? Tickets { get; set; }
     }
 }

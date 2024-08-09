@@ -19,6 +19,6 @@
         public string Address { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public List<Device> Devices { get; set; }
+        public List<Device>? Devices { get; set; }
     }
 }
