@@ -1,0 +1,56 @@
+﻿@using PcClinicApi.Models
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory HttpClientFactory
+
+<h3>Get customer by phone number</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>UserId</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>UserType</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@customer.UserId</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td>@customer.Phone</td>
+                <td>@customer.Email</td>
+                <td>@customer.Address</td>
+                <td>@customer.City</td>
+                <td>@customer.State</td>
+                <td>@customer.UserType</td>
+            </tr>
+    </tbody>
+</table>
+
+@code {
+    //temporarily hard-coded
+    public string phone = "1029384756";
+
+    public User customer = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, $"https://localhost:7224/GetCustomerByPhone/{phone}");
+
+        var client = HttpClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            customer = await client.GetFromJsonAsync<User>($"https://localhost:7224/GetCustomerByPhone/{phone}");
+        }
+    }
+}

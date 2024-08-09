@@ -1,0 +1,56 @@
+﻿@using PcClinicApi.Models
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory HttpClientFactory
+@rendermode InteractiveServer
+
+<h3>Get tickets by deviceId</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>DeviceId</th>
+            <th>TicketId</th>
+            <th>Reported problem</th>
+            <th>Technician intake notes</th>
+            <th>Ticket type</th>
+            <th>Repair status</th>
+            <th>Ticket time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Ticket ticket in tickets)
+        {
+            <tr>
+                <td>@ticket.DeviceId</td>
+                <td>@ticket.TicketId</td>
+                <td>@ticket.ReportedProblem</td>
+                <td>@ticket.TechIntakeNotes</td>
+                <td>@ticket.TicketType</td>
+                <td>@ticket.RepairStatus</td>
+                <td>@ticket.TicketTime</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    //temporarily hard-coded
+    public int deviceId = 3;
+
+    public List<Ticket> tickets = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, $"https://localhost:7224/GetTicketsByDeviceId/{deviceId}");
+
+        var client = HttpClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            tickets = await client.GetFromJsonAsync<List<Ticket>>($"https://localhost:7224/GetTicketsByDeviceId/{deviceId}");
+        }
+    }
+}

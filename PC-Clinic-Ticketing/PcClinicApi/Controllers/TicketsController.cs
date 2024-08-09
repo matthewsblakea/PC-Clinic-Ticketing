@@ -63,15 +63,26 @@ namespace PcClinicApi.Controllers
         }
 
         // GET: api/Tickets/GetTicketsByDeviceId
-        [HttpGet("/GetTicketsByDeviceId")]
-        public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsByDeviceId(int deviceId)
+        [HttpGet("/GetTicketsByDeviceId/{deviceId}")]
+        public async Task<ActionResult<List<Ticket>>> GetTicketsByDeviceId(int deviceId)
         {
-            ActionResult<IEnumerable<Ticket>> tickets = await _context.Tickets.Where(x => x.DeviceId == deviceId).ToListAsync();
+            ActionResult<List<Ticket>> tickets = await _context.Tickets.Where(x => x.DeviceId == deviceId).Select(x => new Ticket
+            {
+                DeviceId = x.DeviceId,
+                TicketId = x.TicketId,
+                ReportedProblem = x.ReportedProblem,
+                TechIntakeNotes = x.TechIntakeNotes,
+                TicketType = x.TicketType,
+                RepairStatus = x.RepairStatus,
+                TicketTime = x.TicketTime,
+                Device = x.Device,
+                RepairLogs = x.RepairLogs
+            }).ToListAsync();
             return tickets;
         }
 
         // GET: api/Tickets/GetTicketIdsByDeviceId
-        [HttpGet("/GetTicketIdsByDeviceId")]
+        [HttpGet("/GetTicketIdsByDeviceId/{deviceId}")]
         public async Task<ActionResult<IEnumerable<int>>> GetTicketIdsByDeviceId(int deviceId)
         {
             ActionResult<IEnumerable<int>> ticketIds = await _context.Tickets.Where(x => x.DeviceId == deviceId).Select(x => x.TicketId).ToListAsync();

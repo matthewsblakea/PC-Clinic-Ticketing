@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -43,7 +44,7 @@ namespace PcClinicApi.Controllers
         }
 
         // GET: api/Devices/GetDevicesByPhone
-        [HttpGet("/GetDevicesByPhone")]
+        [HttpGet("/GetDevicesByPhone/{phone}")]
         public async Task<ActionResult<IEnumerable<Device>>> GetDevicesByPhone(string phone)
         {
             var userId = await _context.Users.Where(x => x.Phone == phone).Select(x => x.UserId).FirstOrDefaultAsync();
@@ -55,16 +56,20 @@ namespace PcClinicApi.Controllers
         }
 
         // GET: api/Devices/GetDevicesByUserId
-        [HttpGet("/GetDevicesByUserId")]
-        public async Task<ActionResult<IEnumerable<Device>>> GetDevicesByUserId(int userId)
+        [HttpGet("/GetDevicesByUserId/{userId}")]
+        public async Task<ActionResult<List<Device>>> GetDevicesByUserId(int userId)
         {
-            ActionResult<IEnumerable<Device>> devices = await _context.Devices.Where(x => x.UserId == userId).ToListAsync();
+            ActionResult<List<Device>> devices = await _context.Devices.Where(x => x.UserId == userId).Select(x => new Device
+            {
+                DeviceId=x.DeviceId, UserId=x.UserId, DeviceType=x.DeviceType, ModelNumber=x.ModelNumber, 
+                SerialNumber=x.SerialNumber, DevicePassword=x.DevicePassword, User=x.User, Tickets=x.Tickets
+            }).ToListAsync();
 
             return devices;
         }
 
         // GET: api/Devices/GetDeviceIdsByUserId
-        [HttpGet("/GetDeviceIdsByUserId")]
+        [HttpGet("/GetDeviceIdsByUserId/{userId}")]
         public async Task<ActionResult<IEnumerable<int>>> GetDeviceIdsByUserId(int userId)
         {
             ActionResult<IEnumerable<int>> deviceIds = await _context.Devices.Where(x => x.UserId == userId).Select(x => x.DeviceId).ToListAsync();

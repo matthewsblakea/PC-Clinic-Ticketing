@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetClosedTickets.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRDbG9zZWRUaWNrZXRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetCustomerByPhone.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRDdXN0b21lckJ5UGhvbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetCustomers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRDdXN0b21lcnMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,12 +54,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXREZXZpY2VzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetDevicesByUserId.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXREZXZpY2VzQnlVc2VySWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetOpenTickets.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRPcGVuVGlja2V0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetRepairLogs.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRSZXBhaXJMb2dzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetRepairLogsByTicketId.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRSZXBhaXJMb2dzQnlUaWNrZXRJZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetTickets.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRUaWNrZXRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/GetTicketsbyDeviceId.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZXRUaWNrZXRzYnlEZXZpY2VJZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicFrontend/Components/Pages/Home.razor]

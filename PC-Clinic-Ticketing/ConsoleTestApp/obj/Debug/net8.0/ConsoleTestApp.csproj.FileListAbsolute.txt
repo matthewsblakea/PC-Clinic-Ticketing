@@ -8,7 +8,6 @@ D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\b
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\ConsoleTestApp.runtimeconfig.json
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\ConsoleTestApp.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\ConsoleTestApp.pdb
-D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\AutoMapper.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\Humanizer.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\ConsoleTestApp\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll

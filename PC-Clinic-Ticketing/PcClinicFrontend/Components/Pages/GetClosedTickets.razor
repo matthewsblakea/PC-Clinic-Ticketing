@@ -4,7 +4,7 @@
 @inject IHttpClientFactory HttpClientFactory
 @rendermode InteractiveServer
 
-<h3>Tickets</h3>
+<h3>Closed tickets</h3>
 
 @if (tickets == null)
 {
@@ -15,8 +15,8 @@ else
     <table>
         <thead>
             <tr>
-                <th>DeviceId</th>
                 <th>TicketId</th>
+                <th>DeviceId</th>
                 <th>Reported problem</th>
                 <th>Technician intake notes</th>
                 <th>Ticket type</th>
@@ -28,8 +28,8 @@ else
             @foreach (Ticket ticket in tickets)
             {
                 <tr>
-                    <td>@ticket.DeviceId</td>
                     <td>@ticket.TicketId</td>
+                    <td>@ticket.DeviceId</td>
                     <td>@ticket.ReportedProblem</td>
                     <td>@ticket.TechIntakeNotes</td>
                     <td>@ticket.TicketType</td>
@@ -48,6 +48,6 @@ else
     protected async override Task OnInitializedAsync()
     {
         var client = HttpClientFactory.CreateClient("PcClinicApi");
-        tickets = await client.GetFromJsonAsync<List<Ticket>>("/api/Tickets");
+        tickets = await client.GetFromJsonAsync<List<Ticket>>("/GetClosedTickets");
     }
 }

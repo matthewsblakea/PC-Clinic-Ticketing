@@ -64,27 +64,24 @@ namespace PcClinicApi.Controllers
         }
 
         // GET: api/Users/GetCustomerByPhone
-        [HttpGet("/GetCustomerByPhone")]
+        [HttpGet("/GetCustomerByPhone/{phone}")]
         public async Task<ActionResult<User>> GetCustomerByPhone(string phone)
         {
-            var customer = await _context.Users.Where(x => x.Phone == phone).FirstOrDefaultAsync();
+            var customer = await _context.Users.Where(x => x.UserType == Models.User.UserTypes.Customer).
+                Where(x => x.Phone == phone).FirstOrDefaultAsync();
 
             if (customer == null)
             {
                 return NotFound();
             }
-            else if (customer.UserType == Models.User.UserTypes.Customer)
-            {
-                return customer;
-            }
             else
             {
-                return NotFound();
+                return customer;
             }
         }
 
         // GET: api/Users/GetCustomerIdByPhone
-        [HttpGet("/GetCustomerIdByPhone")]
+        [HttpGet("/GetCustomerIdByPhone/{phone}")]
         public async Task<ActionResult<int>> GetCustomerIdByPhone(string phone)
         {
             var customer = await _context.Users.Where(x => x.Phone == phone).FirstOrDefaultAsync();
