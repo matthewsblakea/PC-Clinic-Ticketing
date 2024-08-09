@@ -21,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1056,
+          "DockedWidth": 1003,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -53,19 +53,18 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PostCustomer.razor",
-              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\Components\\Pages\\PostCustomer.razor",
+              "DocumentMoniker": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\Components\\Pages\\PostCustomer.razor",
               "RelativeDocumentMoniker": "PcClinicFrontend\\Components\\Pages\\PostCustomer.razor",
-              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\PC-Clinic-Ticketing\\PcClinicFrontend\\Components\\Pages\\PostCustomer.razor",
+              "ToolTip": "D:\\DOCS\\CodeKY\\Projects\\PC-Clinic-Ticketing\\Pc-Clinic-Ticketing\\PcClinicFrontend\\Components\\Pages\\PostCustomer.razor",
               "RelativeToolTip": "PcClinicFrontend\\Components\\Pages\\PostCustomer.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T05:53:46.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T05:53:46.666Z"
             }
           ]
         },
         {
-          "DockedWidth": 1087,
+          "DockedWidth": 723,
           "SelectedChildIndex": 0,
           "Children": [
             {
