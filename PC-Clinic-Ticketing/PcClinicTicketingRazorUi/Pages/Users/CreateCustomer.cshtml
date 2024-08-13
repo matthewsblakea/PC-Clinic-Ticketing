@@ -1,5 +1,5 @@
 ﻿@page
-@model PcClinicTicketingRazorUi.Pages.Users.CreateUser
+@model PcClinicTicketingRazorUi.Pages.Users.CreateCustomer
 @{
 }
 
@@ -32,10 +32,6 @@
         <label asp-for="user.State"></label>
         <input asp-for="user.State" class="form-control" />
         <span asp-validation-for="user.State" class="text-danger"></span>
-
-        <label asp-for="user.Password"></label>
-        <input asp-for="user.Password" class="form-control" />
-        <span asp-validation-for="user.Password" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Create User</button>
 </form>

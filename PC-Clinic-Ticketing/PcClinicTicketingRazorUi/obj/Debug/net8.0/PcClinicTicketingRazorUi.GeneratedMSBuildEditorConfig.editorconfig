@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\DOCS\CodeKY\Projects\PC-Clinic-Ticketing\PC-Clinic-Ticketing\PcClinicTicketingRazorUi
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Devices/CreateDevice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlc1xDcmVhdGVEZXZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Devices/EditDevice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlc1xFZGl0RGV2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Devices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,8 +54,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/CreateUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlVXNlci5jc2h0bWw=
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/CreateCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlQ3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/EditUser.cshtml]

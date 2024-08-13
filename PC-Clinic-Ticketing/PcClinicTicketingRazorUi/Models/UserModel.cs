@@ -12,7 +12,6 @@ namespace PcClinicTicketingRazorUi.Models
         }
 
         public int UserId { get; set; }
-        [Required]
         [StringLength(100)]
         public string? Password { get; set; }
         public UserTypes UserType { get; set; }

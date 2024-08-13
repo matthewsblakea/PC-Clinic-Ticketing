@@ -1,0 +1,36 @@
+﻿@page
+@using PcClinicTicketingRazorUi.Models;
+@model PcClinicTicketingRazorUi.Pages.Devices.CreateDevice
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        @foreach(var x in System.Enum.GetValues(
+            typeof(Models.Device.DeviceTypes)))
+        {
+            <label>@(Html.RadioButtonFor<Models.Device.DeviceTypes>
+                (y => y.@device.DeviceType,(@CreateDevice.DeviceTypes)x, null)) @x
+                </label>
+        }
+        <span asp-validation-for="@Model.device.DeviceType" class="text-danger"></span>
+
+        <p></p>
+        <label asp-for="device.UserId"></label>
+        <input asp-for="@Model.device.UserId" class="form-control" />
+        <span asp-validation-for="@Model.device.UserId" class="text-danger"></span>
+                
+        <label asp-for="device.ModelNumber"></label>
+        <input asp-for="@Model.device.ModelNumber" class="form-control" />
+        <span asp-validation-for="@Model.device.ModelNumber" class="text-danger"></span>
+
+        <label asp-for="device.SerialNumber"></label>
+        <input asp-for="@Model.device.SerialNumber" class="form-control" />
+        <span asp-validation-for="@Model.device.SerialNumber" class="text-danger"></span>
+
+        <label asp-for="device.DevicePassword"></label>
+        <input asp-for="@Model.device.DevicePassword" class="form-control" />
+        <span asp-validation-for="@Model.device.DevicePassword" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add device</button>
+</form>

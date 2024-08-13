@@ -31,7 +31,7 @@ namespace PcClinicTicketingRazorUi.Pages.Users
             {
                 var result = await httpClient.GetAsync($"api/Devices/GetDevicesByUserId/{id}");
                 var jsonString = await result.Content.ReadAsStringAsync();
-                user.Devices = JsonConvert.DeserializeObject<List<Device>>(jsonString);
+                devices = JsonConvert.DeserializeObject<List<Device>>(jsonString);
             }
         }
 

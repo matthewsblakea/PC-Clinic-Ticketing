@@ -1,47 +1,39 @@
 ﻿@page
-@model PcClinicTicketingRazorUi.Pages.Users.UsersIndex
+@model PcClinicTicketingRazorUi.Pages.Users.Index
 @{
 }
 
 <table>
     <thead>
         <tr>
-            <th>
-                User Id
-            </th>
+            <th>User Id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var user in Model.users)
         {
-            <tr>
-                <td><a asp-page="/Users/GetUserById" asp-route-id="@user.UserId">@user.UserId</a></td>
-            </tr>
-            <tr>
+            @if (user.UserType == Models.User.UserTypes.Customer)
+            {
+                <tr>
+                    <td><a asp-page="/Users/GetUserById" asp-route-id="@user.UserId">@user.UserId</a></td>
                 <td>@user.FirstName</td>
-            </tr>
-            <tr>
                 <td>@user.LastName</td>
-            </tr>
-            <tr>
                 <td>@user.Phone</td>
-            </tr>
-            <tr>
                 <td>@user.Email</td>
-            </tr>
-            <tr>
                 <td>@user.Address</td>
-            </tr>
-            <tr>
                 <td>@user.City</td>
-            </tr>
-            <tr>
                 <td>@user.State</td>
+                <td><a asp-page="/Users/EditUser" asp-route-id="@user.UserId">Edit user</a></td>
             </tr>
-            <tr>
-                <td><a asp-page="/Users/EditUser" asp-route-id="@user.UserId">Edit</a></td>
-            </tr>
+            }
         }
     </tbody>
 </table>

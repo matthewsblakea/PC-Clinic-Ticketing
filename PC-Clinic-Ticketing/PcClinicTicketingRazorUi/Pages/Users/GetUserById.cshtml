@@ -1,5 +1,61 @@
 ﻿@page
+@using PcClinicTicketingRazorUi.Models
 @model PcClinicTicketingRazorUi.Pages.Users.GetUserById
 @{
 }
-@Model.user.FirstName
+<table>
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.user.UserId</td>
+            <td>@Model.user.FirstName</td>
+            <td>@Model.user.LastName</td>
+            <td>@Model.user.Phone</td>
+            <td>@Model.user.Email</td>
+            <td>@Model.user.Address</td>
+            <td>@Model.user.City</td>
+            <td>@Model.user.State</td>
+            <td><a asp-page="/Users/EditUser" asp-route-id="@Model.user.UserId">Edit customer</a></td>
+            <td><a asp-page="/Devices/CreateDevice">Add device</a></td>
+        </tr>
+    </tbody>
+</table>
+
+@foreach (Device device in Model.devices)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Device Id</th>
+                <th>Device type</th>
+                <th>Model number</th>
+                <th>Serial number</th>
+                <th>Device password</th>
+                <th></th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@device.DeviceId</td>
+                <td>@device.DeviceType</td>
+                <td>@device.ModelNumber</td>
+                <td>@device.SerialNumber</td>
+                <td>@device.DevicePassword</td>
+                <td><a asp-page="/Devices/EditDevice" asp-route-id="@device.DeviceId">Edit</a></td>
+            </tr>
+        </tbody>
+    </table>
+}

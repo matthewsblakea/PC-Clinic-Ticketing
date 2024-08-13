@@ -6,13 +6,13 @@ using PcClinicTicketingRazorUi.Models;
 
 namespace PcClinicTicketingRazorUi.Pages.Users
 {
-    public class UsersIndex : PageModel
+    public class Index : PageModel
     {
         public List<User> users;
         
         private IHttpClientFactory _httpClientFactory;
 
-        public UsersIndex(IHttpClientFactory httpClientFactory)
+        public Index(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
             users = new List<User>();

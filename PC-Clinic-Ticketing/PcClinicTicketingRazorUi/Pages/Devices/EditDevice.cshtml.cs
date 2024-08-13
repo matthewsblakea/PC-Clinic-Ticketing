@@ -4,16 +4,16 @@ using Newtonsoft.Json;
 using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
 
-namespace PcClinicTicketingRazorUi.Pages.Users
+namespace PcClinicTicketingRazorUi.Pages.Devices
 {
-    public class EditUser : PageModel
+    public class EditDevice : PageModel
     {
         [BindProperty]
-        public User user { get; set; }
+        public Device device { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public EditUser(IHttpClientFactory httpClientFactory)
+        public EditDevice(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -22,9 +22,9 @@ namespace PcClinicTicketingRazorUi.Pages.Users
         {
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                var result = await httpClient.GetAsync($"api/users/{id}");
+                var result = await httpClient.GetAsync($"api/devices/{id}");
                 var jsonString = await result.Content.ReadAsStringAsync();
-                user = JsonConvert.DeserializeObject<User>(jsonString);
+                device = JsonConvert.DeserializeObject<Device>(jsonString);
             }
         }
 
@@ -37,13 +37,11 @@ namespace PcClinicTicketingRazorUi.Pages.Users
 
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                var userJson = JsonContent.Create(user);
+                var deviceJson = JsonContent.Create(device);
 
-                var result = await httpClient.PutAsync($"api/users/{user.UserId}", userJson);
+                var result = await httpClient.PutAsync($"api/devices/{device.DeviceId}", deviceJson);
             }
-            return RedirectToPage("./index");
+            return RedirectToPage("index");
         }
-
-
     }
 }

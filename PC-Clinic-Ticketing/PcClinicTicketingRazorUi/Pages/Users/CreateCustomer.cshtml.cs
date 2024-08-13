@@ -7,14 +7,15 @@ using System.Net.Http;
 
 namespace PcClinicTicketingRazorUi.Pages.Users
 {
-    public class CreateUser : PageModel
+    public class CreateCustomer : PageModel
     {
         [BindProperty]
         public User user { get; set; }
 
+
         private IHttpClientFactory _httpClientFactory;
 
-        public CreateUser(IHttpClientFactory httpClientFactory)
+        public CreateCustomer(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -31,6 +32,7 @@ namespace PcClinicTicketingRazorUi.Pages.Users
 
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
+                user.UserType = Models.User.UserTypes.Customer;
                 var userJson = JsonContent.Create(user);
 
                 var result = await httpClient.PostAsync($"api/users", userJson);
@@ -39,10 +41,3 @@ namespace PcClinicTicketingRazorUi.Pages.Users
         }
     }
 }
-
-/*using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
-{
-    var result = await httpClient.GetAsync($"api/users/{id}");
-    var jsonString = await result.Content.ReadAsStringAsync();
-    user = JsonConvert.DeserializeObject<User>(jsonString);
-}*/
