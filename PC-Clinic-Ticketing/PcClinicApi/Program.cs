@@ -18,12 +18,6 @@ using (TicketingContext context = new())
 {
     context.Database.EnsureDeleted();
     context.Database.EnsureCreated();
-/*}
-
-using (TicketingContext _context = new())
-{*/
-    //_context.Database.EnsureDeleted();
-    //_context.Database.EnsureCreated();
 
     var testAdmin = new User()
     {
@@ -188,20 +182,7 @@ using (TicketingContext _context = new())
     context.Add(testTicket4);
 
     context.SaveChanges();
-    /*var users = _context.Users.ToList();
-    foreach (User user in users)
-    {
-        Console.WriteLine(user.Password);
-        Console.WriteLine(user.UserType);
-        Console.WriteLine(user.FirstName);
-        Console.WriteLine(user.LastName);
-        Console.WriteLine(user.Phone1);
-        Console.WriteLine(user.Phone2);
-        Console.WriteLine(user.Email);
-        Console.WriteLine(user.Address);
-        Console.WriteLine(user.City);
-        Console.WriteLine(user.State);
-    }*/
+    
 
 }
 

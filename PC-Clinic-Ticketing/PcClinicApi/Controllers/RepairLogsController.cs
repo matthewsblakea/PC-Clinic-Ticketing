@@ -42,8 +42,8 @@ namespace PcClinicApi.Controllers
             return repairLog;
         }
 
-        // GET: api/RepairLogs/GetRepairLogsByTicketId
-        [HttpGet("/GetRepairLogsByTicketId/{ticketId}")]
+        // GET: GetRepairLogsByTicketId/5
+        [HttpGet("GetRepairLogsByTicketId/{ticketId}")]
         public async Task<ActionResult<List<RepairLog>>> GetRepairLogsByTicketId(int ticketId)
         {
             ActionResult<List<RepairLog>> repairLogs = await _context.RepairLogs.Where(x => x.TicketId == ticketId).Select(x => new RepairLog
@@ -61,8 +61,8 @@ namespace PcClinicApi.Controllers
             return repairLogs;
         }
 
-        // GET: api/RepairLogs/GetRepairLogsByTechnicianId
-        [HttpGet("/GetRepairLogsByTechnicianId/{userId}")]
+        // GET: GetRepairLogsByTechnicianId/5
+        [HttpGet("GetRepairLogsByTechnicianId/{userId}")]
         public async Task<ActionResult<IEnumerable<RepairLog>>> GetDevicesByTechnicianId(int userId)
         {
             ActionResult<IEnumerable<RepairLog>> repairLogs = await _context.RepairLogs.Where(x => x.UserId == userId).ToListAsync();

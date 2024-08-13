@@ -43,8 +43,8 @@ namespace PcClinicApi.Controllers
             return user;
         }
 
-        // GET: api/Users/GetTechnicians
-        [HttpGet("/GetTechnicians")]
+        // GET: GetTechnicians
+        [HttpGet("GetTechnicians")]
         public async Task<ActionResult<IEnumerable<User>>> GetTechnicians()
         {
             ActionResult<IEnumerable<User>> techs = await (from x in _context.Users
@@ -53,8 +53,8 @@ namespace PcClinicApi.Controllers
             return techs;
         }
 
-        // GET: api/Users/GetCustomers
-        [HttpGet("/GetCustomers")]
+        // GET: GetCustomers
+        [HttpGet("GetCustomers")]
         public async Task<ActionResult<IEnumerable<User>>> GetCustomers()
         {
             ActionResult<IEnumerable<User>> customers = await (from x in _context.Users
@@ -63,8 +63,8 @@ namespace PcClinicApi.Controllers
             return customers;
         }
 
-        // GET: api/Users/GetCustomerByPhone
-        [HttpGet("/GetCustomerByPhone/{phone}")]
+        // GET: GetCustomerByPhone/1234567890
+        [HttpGet("GetCustomerByPhone/{phone}")]
         public async Task<ActionResult<User>> GetCustomerByPhone(string phone)
         {
             var customer = await _context.Users.Where(x => x.UserType == Models.User.UserTypes.Customer).
@@ -80,8 +80,8 @@ namespace PcClinicApi.Controllers
             }
         }
 
-        // GET: api/Users/GetCustomerIdByPhone
-        [HttpGet("/GetCustomerIdByPhone/{phone}")]
+        // GET: GetCustomerIdByPhone/1234567890
+        [HttpGet("GetCustomerIdByPhone/{phone}")]
         public async Task<ActionResult<int>> GetCustomerIdByPhone(string phone)
         {
             var customer = await _context.Users.Where(x => x.Phone == phone).FirstOrDefaultAsync();
@@ -143,9 +143,9 @@ namespace PcClinicApi.Controllers
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
-        // POST: api/Users/AddCustomer
+        // POST: AddCustomer
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost("/AddCustomer")]
+        [HttpPost("AddCustomer")]
         public async Task<ActionResult<User>> AddCustomer(User user)
         {
             _context.Users.Add(user);
@@ -155,9 +155,9 @@ namespace PcClinicApi.Controllers
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
-        // POST: api/Users/AddTechnician
+        // POST: AddTechnician
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost("/AddTechnician")]
+        [HttpPost("AddTechnician")]
         public async Task<ActionResult<User>> AddTechnician(User user)
         {
             _context.Users.Add(user);
@@ -183,8 +183,8 @@ namespace PcClinicApi.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Users/DeleteCustomer/5
-        [HttpDelete("/DeleteCustomer/{id}")]
+        // DELETE: DeleteCustomer/5
+        [HttpDelete("DeleteCustomer/{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -203,8 +203,8 @@ namespace PcClinicApi.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Users/DeleteTechnician/5
-        [HttpDelete("/DeleteTechnician/{id}")]
+        // DELETE: DeleteTechnician/5
+        [HttpDelete("DeleteTechnician/{id}")]
         public async Task<IActionResult> DeleteTechnician(int id)
         {
             var user = await _context.Users.FindAsync(id);

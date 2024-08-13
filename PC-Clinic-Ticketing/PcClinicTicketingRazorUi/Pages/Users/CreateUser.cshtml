@@ -1,0 +1,41 @@
+﻿@page
+@model PcClinicTicketingRazorUi.Pages.Users.CreateUser
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="user.FirstName"></label>
+        <input asp-for="user.FirstName" class="form-control" />
+        <span asp-validation-for="user.FirstName" class="text-danger"></span>
+
+        <label asp-for="user.LastName"></label>
+        <input asp-for="user.LastName" class="form-control" />
+        <span asp-validation-for="user.LastName" class="text-danger"></span>
+
+        <label asp-for="user.Email"></label>
+        <input asp-for="user.Email" class="form-control" />
+        <span asp-validation-for="user.Email" class="text-danger"></span>
+
+        <label asp-for="user.Phone"></label>
+        <input asp-for="user.Phone" class="form-control" />
+        <span asp-validation-for="user.Phone" class="text-danger"></span>
+
+        <label asp-for="user.Address"></label>
+        <input asp-for="user.Address" class="form-control" />
+        <span asp-validation-for="user.Address" class="text-danger"></span>
+
+        <label asp-for="user.City"></label>
+        <input asp-for="user.City" class="form-control" />
+        <span asp-validation-for="user.City" class="text-danger"></span>
+
+        <label asp-for="user.State"></label>
+        <input asp-for="user.State" class="form-control" />
+        <span asp-validation-for="user.State" class="text-danger"></span>
+
+        <label asp-for="user.Password"></label>
+        <input asp-for="user.Password" class="form-control" />
+        <span asp-validation-for="user.Password" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create User</button>
+</form>

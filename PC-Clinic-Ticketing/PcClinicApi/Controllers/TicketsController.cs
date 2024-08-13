@@ -42,8 +42,8 @@ namespace PcClinicApi.Controllers
             return ticket;
         }
 
-        // GET: api/Tickets/GetOpenTickets
-        [HttpGet("/GetOpenTickets")]
+        // GET: GetOpenTickets
+        [HttpGet("GetOpenTickets")]
         public async Task<ActionResult<IEnumerable<Ticket>>> GetOpenTickets()
         {
             ActionResult<IEnumerable<Ticket>> openTickets = await (from x in _context.Tickets
@@ -52,8 +52,8 @@ namespace PcClinicApi.Controllers
             return openTickets;
         }
 
-        // GET: api/Tickets/GetClosedTickets
-        [HttpGet("/GetClosedTickets")]
+        // GET: GetClosedTickets
+        [HttpGet("GetClosedTickets")]
         public async Task<ActionResult<IEnumerable<Ticket>>> GetClosedTickets()
         {
             ActionResult<IEnumerable<Ticket>> closedTickets = await (from x in _context.Tickets
@@ -62,8 +62,8 @@ namespace PcClinicApi.Controllers
             return closedTickets;
         }
 
-        // GET: api/Tickets/GetTicketsByDeviceId
-        [HttpGet("/GetTicketsByDeviceId/{deviceId}")]
+        // GET: GetTicketsByDeviceId/5
+        [HttpGet("GetTicketsByDeviceId/{deviceId}")]
         public async Task<ActionResult<List<Ticket>>> GetTicketsByDeviceId(int deviceId)
         {
             ActionResult<List<Ticket>> tickets = await _context.Tickets.Where(x => x.DeviceId == deviceId).Select(x => new Ticket
@@ -81,8 +81,8 @@ namespace PcClinicApi.Controllers
             return tickets;
         }
 
-        // GET: api/Tickets/GetTicketIdsByDeviceId
-        [HttpGet("/GetTicketIdsByDeviceId/{deviceId}")]
+        // GET: GetTicketIdsByDeviceId/5
+        [HttpGet("GetTicketIdsByDeviceId/{deviceId}")]
         public async Task<ActionResult<IEnumerable<int>>> GetTicketIdsByDeviceId(int deviceId)
         {
             ActionResult<IEnumerable<int>> ticketIds = await _context.Tickets.Where(x => x.DeviceId == deviceId).Select(x => x.TicketId).ToListAsync();
