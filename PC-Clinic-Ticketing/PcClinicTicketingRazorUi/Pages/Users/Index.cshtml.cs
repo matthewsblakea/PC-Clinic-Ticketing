@@ -8,7 +8,8 @@ namespace PcClinicTicketingRazorUi.Pages.Users
 {
     public class Index : PageModel
     {
-        public List<User> users;
+        [BindProperty]
+        public List<User> users { get; set; }
         
         private IHttpClientFactory _httpClientFactory;
 

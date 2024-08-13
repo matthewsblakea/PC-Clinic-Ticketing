@@ -5,26 +5,27 @@ using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
 using System.Net.Http;
 
-namespace PcClinicTicketingRazorUi.Pages.Users
+namespace PcClinicTicketingRazorUi.Pages.Tickets
 {
-    public class GetUserById : PageModel
+    public class GetTicketsByDeviceId : PageModel
     {
         [BindProperty]
-        public User user { get; set; }
+        public List<Ticket> tickets { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public GetUserById(IHttpClientFactory httpClientFactory)
+        public GetTicketsByDeviceId(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
+
         public async Task OnGetAsync(int id)
         {
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                var result = await httpClient.GetAsync($"api/users/{id}");
+                var result = await httpClient.GetAsync($"api/Tickets/GetTicketsByDeviceId/{id}");
                 var jsonString = await result.Content.ReadAsStringAsync();
-                user = JsonConvert.DeserializeObject<User>(jsonString);
+                tickets = JsonConvert.DeserializeObject<List<Ticket>>(jsonString);
             }
         }
     }

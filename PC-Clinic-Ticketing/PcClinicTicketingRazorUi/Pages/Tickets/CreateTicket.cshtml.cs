@@ -3,32 +3,37 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
 
-namespace PcClinicTicketingRazorUi.Pages.Devices
+namespace PcClinicTicketingRazorUi.Pages.Tickets
 {
-    public class CreateDevice : PageModel
+    public class CreateTicket : PageModel
     {
         [BindProperty]
-        public Device device { get; set; }
+        public Ticket ticket { get; set; }
 
-        public enum DeviceTypes
+        public enum TicketTypes
         {
-            Desktop = 0,
-            AIO = 1,
-            Laptop = 2,
-            Tablet = 3,
-            Phone = 4,
-            Watch = 5,
-            NetworkingDevice = 6,
-            Printer = 7,
-            Other = 8
+            Consultation = 0,
+            Repair = 1,
+            OnSite = 2
+        }
+
+        public enum RepairStatuses
+        {
+            Received = 0,
+            InProgress = 1,
+            Completed = 2,
+            Closed = 3
         }
 
         [BindProperty]
-        public DeviceTypes DeviceType { get; set; }
+        public TicketTypes TicketType { get; set; }
+
+        [BindProperty]
+        public RepairStatuses RepairStatus { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public CreateDevice(IHttpClientFactory httpClientFactory)
+        public CreateTicket(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -45,9 +50,9 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
 
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                var deviceJson = JsonContent.Create(device);
+                var ticketJson = JsonContent.Create(ticket);
 
-                var result = await httpClient.PostAsync($"api/Devices", deviceJson);
+                var result = await httpClient.PostAsync($"api/Tickets", ticketJson);
             }
             return RedirectToPage("index");
         }

@@ -3,6 +3,7 @@
 @{
 }
 
+<h3>Customer List</h3>
 <table>
     <thead>
         <tr>
@@ -14,7 +15,7 @@
             <th>Address</th>
             <th>City</th>
             <th>State</th>
-            <th></th>
+            <th><a asp-page="/Users/CreateCustomer">Add customer</a></th>
         </tr>
     </thead>
     <tbody>
@@ -24,15 +25,15 @@
             {
                 <tr>
                     <td><a asp-page="/Users/GetUserById" asp-route-id="@user.UserId">@user.UserId</a></td>
-                <td>@user.FirstName</td>
-                <td>@user.LastName</td>
-                <td>@user.Phone</td>
-                <td>@user.Email</td>
-                <td>@user.Address</td>
-                <td>@user.City</td>
-                <td>@user.State</td>
-                <td><a asp-page="/Users/EditUser" asp-route-id="@user.UserId">Edit user</a></td>
-            </tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Phone</td>
+                    <td>@user.Email</td>
+                    <td>@user.Address</td>
+                    <td>@user.City</td>
+                    <td>@user.State</td>
+                    <td><a asp-page="/Users/EditUser" asp-route-id="@user.UserId">Edit customer</a></td>
+                </tr>
             }
         }
     </tbody>

@@ -1,0 +1,33 @@
+﻿@page
+@using PcClinicTicketingRazorUi.Models
+@model PcClinicTicketingRazorUi.Pages.Devices.GetDevicesByUserId
+@{
+}
+
+<h3>Devices on Customer Account</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Device Id</th>
+            <th>Device type</th>
+            <th>Model number</th>
+            <th>Serial number</th>
+            <th>Device password</th>
+            <th><a asp-page="/Devices/CreateDevice">Add device</a></th>
+        </tr>
+    </thead>
+@foreach (Device device in Model.devices)
+{
+    
+        <tbody>
+            <tr>
+                <td><a asp-page="/Tickets/GetTicketsByDeviceId" asp-route-id="@device.DeviceId">@device.DeviceId</a></td>
+                <td>@device.DeviceType</td>
+                <td>@device.ModelNumber</td>
+                <td>@device.SerialNumber</td>
+                <td>@device.DevicePassword</td>
+                <td><a asp-page="/Devices/EditDevice" asp-route-id="@device.DeviceId">Edit</a></td>
+            </tr>
+        </tbody>
+}
+</table>

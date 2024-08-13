@@ -1,11 +1,15 @@
 ﻿@page
-@using PcClinicTicketingRazorUi.Models;
+@using PcClinicTicketingRazorUi.Models
 @model PcClinicTicketingRazorUi.Pages.Devices.CreateDevice
 @{
 }
 
 <form method="post">
     <div class="form-group">
+        <label asp-for="device.UserId"></label>
+        <input asp-for="@Model.device.UserId" class="form-control" />
+        <span asp-validation-for="@Model.device.UserId" class="text-danger"></span>
+        
         @foreach(var x in System.Enum.GetValues(
             typeof(Models.Device.DeviceTypes)))
         {
@@ -16,10 +20,7 @@
         <span asp-validation-for="@Model.device.DeviceType" class="text-danger"></span>
 
         <p></p>
-        <label asp-for="device.UserId"></label>
-        <input asp-for="@Model.device.UserId" class="form-control" />
-        <span asp-validation-for="@Model.device.UserId" class="text-danger"></span>
-                
+                        
         <label asp-for="device.ModelNumber"></label>
         <input asp-for="@Model.device.ModelNumber" class="form-control" />
         <span asp-validation-for="@Model.device.ModelNumber" class="text-danger"></span>

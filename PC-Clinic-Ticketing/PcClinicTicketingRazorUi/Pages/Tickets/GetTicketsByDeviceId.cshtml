@@ -1,0 +1,36 @@
+﻿@page
+@using PcClinicTicketingRazorUi.Models
+@model PcClinicTicketingRazorUi.Pages.Tickets.GetTicketsByDeviceId
+@{
+}
+
+<h3>Tickets for customer device</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Ticket Id</th>
+            <th>Reported problem</th>
+            <th>Intake notes</th>
+            <th>Ticket type</th>
+            <th>Repair status</th>
+            <th>Ticket time</th>
+            <th>
+            <th><a asp-page="/Tickets/CreateTicket">Add ticket</a></th>
+        </tr>
+    </thead>
+@foreach (Ticket ticket in Model.tickets)
+{
+    
+        <tbody>
+            <tr>
+                <td><a asp-page="/RepairLogs/GetRepairLogsByTicketId" asp-route-id="@ticket.TicketId">@ticket.TicketId</a></td>
+                <td>@ticket.ReportedProblem</td>
+                <td>@ticket.TechIntakeNotes</td>
+                <td>@ticket.TicketType</td>
+                <td>@ticket.RepairStatus</td>
+                <td>@ticket.TicketTime</td>
+                <td></td>
+            </tr>
+        </tbody>
+}
+</table>
