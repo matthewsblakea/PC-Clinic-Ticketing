@@ -1,0 +1,48 @@
+﻿@page
+@model PcClinicTicketingRazorUi.Pages.Tickets.EditTicket
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        @Html.HiddenFor(x => x.ticket.TicketId)
+        @Html.HiddenFor(x => x.ticket.DeviceId)
+
+        @foreach (var x in System.Enum.GetValues(
+        typeof(Models.Ticket.TicketTypes)))
+        {
+            <label>
+                @(Html.RadioButtonFor<Models.Ticket.TicketTypes>
+                    (y => y.@ticket.TicketType, (EditTicket.TicketTypes)x, null)) @x
+            </label>
+        }
+        <span asp-validation-for="ticket.TicketType" class="text-danger"></span>
+
+        <p></p>
+
+        @foreach (var x in System.Enum.GetValues(
+        typeof(Models.Ticket.RepairStatuses)))
+        {
+            <label>
+                @(Html.RadioButtonFor<Models.Ticket.RepairStatuses>
+                    (y => y.ticket.RepairStatus, (EditTicket.RepairStatuses)x, null)) @x
+            </label>
+        }
+        <span asp-validation-for="ticket.RepairStatus" class="text-danger"></span>
+
+        <p></p>
+
+        <label asp-for="@Model.ticket.ReportedProblem"></label>
+        <input asp-for="@Model.ticket.ReportedProblem" class="form-control" />
+        <span asp-validation-for="@Model.ticket.ReportedProblem" class="text-danger"></span>
+
+        <label asp-for="@Model.ticket.TechIntakeNotes"></label>
+        <input asp-for="@Model.ticket.TechIntakeNotes" class="form-control" />
+        <span asp-validation-for="@Model.ticket.TechIntakeNotes" class="text-danger"></span>
+
+        <label asp-for="@Model.ticket.TicketTime"></label>
+        <input asp-for="@Model.ticket.TicketTime" class="form-control" />
+        <span asp-validation-for="@Model.ticket.TicketTime" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Edit ticket</button>
+</form>

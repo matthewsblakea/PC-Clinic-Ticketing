@@ -13,23 +13,23 @@
         {
             <label>
                 @(Html.RadioButtonFor<Models.Device.DeviceTypes>
-                    (y => y.@device.DeviceType, (@CreateDevice.DeviceTypes)x, null)) @x
+                    (y => y.@device.DeviceType, (EditDevice.DeviceTypes)x, null)) @x
             </label>
         }
-        <span asp-validation-for="device.DeviceType" class="text-danger"></span>
+        <span asp-validation-for="@Model.device.DeviceType" class="text-danger"></span>
 
         <p></p>
-        <label asp-for="device.ModelNumber"></label>
-        <input asp-for="device.ModelNumber" class="form-control" />
-        <span asp-validation-for="device.ModelNumber" class="text-danger"></span>
+        <label asp-for="@Model.device.ModelNumber"></label>
+        <input asp-for="@Model.device.ModelNumber" class="form-control" />
+        <span asp-validation-for="@Model.device.ModelNumber" class="text-danger"></span>
 
-        <label asp-for="device.SerialNumber"></label>
-        <input asp-for="device.SerialNumber" class="form-control" />
-        <span asp-validation-for="device.SerialNumber" class="text-danger"></span>
+        <label asp-for="@Model.device.SerialNumber"></label>
+        <input asp-for="@Model.device.SerialNumber" class="form-control" />
+        <span asp-validation-for="@Model.device.SerialNumber" class="text-danger"></span>
 
-        <label asp-for="device.DevicePassword"></label>
-        <input asp-for="device.DevicePassword" class="form-control" />
-        <span asp-validation-for="device.DevicePassword" class="text-danger"></span>
+        <label asp-for="@Model.device.DevicePassword"></label>
+        <input asp-for="@Model.device.DevicePassword" class="form-control" />
+        <span asp-validation-for="@Model.device.DevicePassword" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Edit device</button>
 </form>

@@ -70,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xDcmVhdGVUaWNrZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Tickets/EditTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xFZGl0VGlja2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Tickets/GetTicketsByDeviceId.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xHZXRUaWNrZXRzQnlEZXZpY2VJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

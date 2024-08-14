@@ -14,7 +14,6 @@
             <th>Ticket type</th>
             <th>Repair status</th>
             <th>Ticket time</th>
-            <th>
             <th><a asp-page="/Tickets/CreateTicket">Add ticket</a></th>
         </tr>
     </thead>
@@ -29,7 +28,7 @@
                 <td>@ticket.TicketType</td>
                 <td>@ticket.RepairStatus</td>
                 <td>@ticket.TicketTime</td>
-                <td></td>
+                <td><a asp-page="/Tickets/EditTicket" asp-route-id="@ticket.TicketId">Edit ticket</a></td>
             </tr>
         </tbody>
 }

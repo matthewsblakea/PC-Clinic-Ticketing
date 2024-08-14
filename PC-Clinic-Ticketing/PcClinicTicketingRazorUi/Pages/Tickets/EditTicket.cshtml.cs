@@ -4,32 +4,37 @@ using Newtonsoft.Json;
 using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
 
-namespace PcClinicTicketingRazorUi.Pages.Devices
+namespace PcClinicTicketingRazorUi.Pages.Tickets
 {
-    public class EditDevice : PageModel
+    public class EditTicket : PageModel
     {
         [BindProperty]
-        public Device device { get; set; }
+        public Ticket ticket { get; set; }
 
-        public enum DeviceTypes
+        public enum TicketTypes
         {
-            Desktop = 0,
-            AIO = 1,
-            Laptop = 2,
-            Tablet = 3,
-            Phone = 4,
-            Watch = 5,
-            NetworkingDevice = 6,
-            Printer = 7,
-            Other = 8
+            Consultation = 0,
+            Repair = 1,
+            OnSite = 2
+        }
+
+        public enum RepairStatuses
+        {
+            Received = 0,
+            InProgress = 1,
+            Completed = 2,
+            Closed = 3
         }
 
         [BindProperty]
-        public DeviceTypes DeviceType { get; set; }
+        public TicketTypes TicketType { get; set; }
+
+        [BindProperty]
+        public RepairStatuses RepairStatus { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public EditDevice(IHttpClientFactory httpClientFactory)
+        public EditTicket(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -38,9 +43,9 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
         {
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                var result = await httpClient.GetAsync($"api/Devices/{id}");
+                var result = await httpClient.GetAsync($"api/Tickets/{id}");
                 var jsonString = await result.Content.ReadAsStringAsync();
-                device = JsonConvert.DeserializeObject<Device>(jsonString);
+                ticket = JsonConvert.DeserializeObject<Ticket>(jsonString);
             }
         }
 
@@ -53,9 +58,9 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
 
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                var deviceJson = JsonContent.Create(device);
+                var ticketJson = JsonContent.Create(ticket);
 
-                var result = await httpClient.PutAsync($"api/Devices/{device.DeviceId}", deviceJson);
+                var result = await httpClient.PutAsync($"api/Tickets/{ticket.TicketId}", ticketJson);
             }
             return RedirectToPage("index");
         }

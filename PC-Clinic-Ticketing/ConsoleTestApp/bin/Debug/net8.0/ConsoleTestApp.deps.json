@@ -2206,7 +2206,10 @@
           "System.Net.Http.Json": "8.0.0"
         },
         "runtime": {
-          "PcClinicApi.dll": {}
+          "PcClinicApi.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
