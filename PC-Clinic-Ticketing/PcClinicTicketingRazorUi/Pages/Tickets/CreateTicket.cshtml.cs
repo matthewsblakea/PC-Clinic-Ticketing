@@ -31,6 +31,7 @@ namespace PcClinicTicketingRazorUi.Pages.Tickets
         [BindProperty]
         public RepairStatuses RepairStatus { get; set; }
 
+        /* This HttpClientFactory is used in each api call to follow the dependency inversion principle. */
         private IHttpClientFactory _httpClientFactory;
 
         public CreateTicket(IHttpClientFactory httpClientFactory)

@@ -11,6 +11,7 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
         [BindProperty]
         public List<Device> devices { get; set; }
 
+        /* This HttpClientFactory is used in each api call to follow the dependency inversion principle. */
         private IHttpClientFactory _httpClientFactory;
 
         public GetDevicesByUserId(IHttpClientFactory httpClientFactory)

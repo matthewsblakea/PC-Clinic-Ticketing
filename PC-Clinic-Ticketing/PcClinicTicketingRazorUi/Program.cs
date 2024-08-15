@@ -6,16 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 // Adding IhttpClientFactory injection
-/*string? httpClientName = builder.Configuration["PcClinicApi"];
-ArgumentException.ThrowIfNullOrEmpty(httpClientName);
 
-builder.Services.AddHttpClient(
-    httpClientName, client =>
-    {
-        client.BaseAddress = new Uri("https://localhost:7224/");
-
-        client.DefaultRequestHeaders.UserAgent.ParseAdd("requestHeader");
-    });*/
+/*
+ * This HttpClientFactory is used in each api call to follow the dependency inversion principle.
+ * The application as a whole also follows the dependency inversion principle because razor pages is based on the MVC pattern and automates certain parts of the pattern for the developer.
+ */
 
 builder.Services.AddHttpClient(PcClinicConstants.httpClientFactoryKey, httpClient =>
 {

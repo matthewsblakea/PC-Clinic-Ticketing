@@ -12,6 +12,7 @@ namespace PcClinicTicketingRazorUi.Pages.Tickets
         [BindProperty]
         public List<Ticket> tickets { get; set; }
 
+        /* This HttpClientFactory is used in each api call to follow the dependency inversion principle. */
         private IHttpClientFactory _httpClientFactory;
 
         public GetTicketsByDeviceId(IHttpClientFactory httpClientFactory)

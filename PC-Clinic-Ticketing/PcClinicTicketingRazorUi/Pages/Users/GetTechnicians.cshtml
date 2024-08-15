@@ -12,6 +12,7 @@
             <th>Last name</th>
             <th>Phone</th>
             <th>Email</th>
+            <th></th>
             <th><a asp-page="/Users/CreateTechnician">Add technician</a></th>
         </tr>
     </thead>
@@ -21,11 +22,12 @@
             @if (user.UserType == Models.User.UserTypes.Technician)
             {
                 <tr>
-                    <td><a asp-page="/Users/GetUserById" asp-route-id="@user.UserId">@user.UserId</a></td>
+                    <td>@user.UserId</td>
                     <td>@user.FirstName</td>
                     <td>@user.LastName</td>
                     <td>@user.Phone</td>
                     <td>@user.Email</td>
+                    <td><a asp-page="/RepairLogs/GetRepairLogsByTechId" asp-route-id="@user.UserId">View technician's logs</a></td>
                     <td><a asp-page="/Users/EditUser" asp-route-id="@user.UserId">Edit technician</a></td>
                 </tr>
             }

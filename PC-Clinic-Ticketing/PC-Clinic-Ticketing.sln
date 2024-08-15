@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTestApp", "ConsoleTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PcClinicTicketingRazorUi", "PcClinicTicketingRazorUi\PcClinicTicketingRazorUi.csproj", "{EA5E798A-C3F8-433B-9355-B815CBDE0AC2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{7C3C03FE-585A-4895-99BF-81393EAD7585}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EA5E798A-C3F8-433B-9355-B815CBDE0AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5E798A-C3F8-433B-9355-B815CBDE0AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5E798A-C3F8-433B-9355-B815CBDE0AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3C03FE-585A-4895-99BF-81393EAD7585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3C03FE-585A-4895-99BF-81393EAD7585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3C03FE-585A-4895-99BF-81393EAD7585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3C03FE-585A-4895-99BF-81393EAD7585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

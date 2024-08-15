@@ -1,0 +1,31 @@
+﻿@page
+@using PcClinicTicketingRazorUi.Models
+@model PcClinicTicketingRazorUi.Pages.RepairLogs.GetRepairLogsByTechId
+@{
+}
+
+<h3>Repair logs by technician</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Repair log Id</th>
+            <th>Ticket Id</th>
+            <th>Log type</th>
+            <th>Log time</th>
+            <th>Log notes</th>
+        </tr>
+    </thead>
+    @foreach (RepairLog repairLog in Model.repairLogs)
+    {
+
+        <tbody>
+            <tr>
+                <td>@repairLog.RepairLogId</td>
+                <td>@repairLog.TicketId</td>
+                <td>@repairLog.LogType</td>
+                <td>@repairLog.LogTime</td>
+                <td>@repairLog.LogNotes</td>
+            </tr>
+        </tbody>
+    }
+</table>

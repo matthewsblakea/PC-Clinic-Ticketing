@@ -4,21 +4,18 @@ using PcClinicApi.Models;
 
 namespace PcClinicApi.PcClinicContext
 {
+    /*
+     * Creating a separate class for the DbContext instead of placing it in program.cs or some other silly place
+     * like most microsoft example documentation does follows the single-responsibility principle.
+     * To follow the single-responsibility principle even further, the connection string for the sqlite database
+     * is kept in a separate class and only referenced here.
+     */
+    
     public class TicketingContext : DbContext
     {
-        // DbSettings field to store the connection string
-        //private readonly DbSettings _dbSettings;
-        // Constructor to inject the DbSettings model
-        /*
-        public TicketingContext(IOptions<DbSettings> dbSettings)
-        {
-            _dbSettings = dbSettings.Value;
-        }
-        */
+        
         private readonly DbSettings _dbSettings = new();
         
-
-        //DbSet properties for models
         public DbSet<User> Users { get; set; }
         public DbSet<Device> Devices { get; set; }
         public DbSet<Ticket> Tickets { get; set; }

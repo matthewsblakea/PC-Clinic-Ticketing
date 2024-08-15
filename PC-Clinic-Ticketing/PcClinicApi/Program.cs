@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using PcClinicApi.Models;
 using PcClinicApi.Controllers;
-using PcClinicApi.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +12,7 @@ builder.Services.AddDbContext<TicketingContext>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Cheaty database creation
+//Cheaty database creation and objects created to test api alls and populate the database with sample data.
 using (TicketingContext context = new())
 {
     context.Database.EnsureDeleted();
@@ -77,12 +76,7 @@ using (TicketingContext context = new())
         Location = "",
         TicketTime = DateTime.Now
     };
-    /*var testRepairLog1 = new RepairLog()
-    {
-        // The first repair log should be automatically created at the time of ticket creation
-        // and should be populated from "ticket.TechIntakeNotes"
-        // A ticket with the "received" status should only have this first log.
-    };*/
+    
     context.Add(testDevice1);
     context.Add(testTicket1);
 
@@ -173,11 +167,7 @@ using (TicketingContext context = new())
         Location = "",
         TicketTime = DateTime.Now
     };
-    /*var testRepairLog41 = new RepairLog()
-    {
-        // The last repair log should be automatically created at the time of ticket closure
-        // and should be populated with a message like "Ticket closed"
-    };*/
+    
     context.Add(testDevice4);
     context.Add(testTicket4);
 
