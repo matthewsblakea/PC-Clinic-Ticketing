@@ -4,28 +4,28 @@ using Newtonsoft.Json;
 using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
 
-namespace PcClinicTicketingRazorUi.Pages.Users
+namespace PcClinicTicketingRazorUi.Pages.Tickets
 {
-    public class Index : PageModel
+    public class OpenTicketQueue : PageModel
     {
         [BindProperty]
-        public List<User> users { get; set; }
+        public List<Ticket> tickets { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public Index(IHttpClientFactory httpClientFactory)
+        public OpenTicketQueue(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
-            users = new List<User>();
+            tickets = new List<Ticket>();
         }
 
         public async Task OnGetAsync()
         {
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                    var result = await httpClient.GetAsync("api/users");
-                    var jsonString = await result.Content.ReadAsStringAsync();
-                    users = JsonConvert.DeserializeObject<List<User>>(jsonString);
+                var result = await httpClient.GetAsync("api/tickets/GetOpenTickets");
+                var jsonString = await result.Content.ReadAsStringAsync();
+                tickets = JsonConvert.DeserializeObject<List<Ticket>>(jsonString);
             }
         }
     }
