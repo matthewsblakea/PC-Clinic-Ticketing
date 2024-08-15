@@ -4,12 +4,16 @@
 @{
 }
 
+<h3>Add Device</h3>
+Enter device information
 <form method="post">
     <div class="form-group">
-        <label asp-for="device.UserId"></label>
+        <label asp-for="device.UserId">Customer Id</label>
         <input asp-for="@Model.device.UserId" class="form-control" />
         <span asp-validation-for="@Model.device.UserId" class="text-danger"></span>
         
+        Type of device
+        <p></p>
         @foreach(var x in System.Enum.GetValues(
             typeof(Models.Device.DeviceTypes)))
         {
@@ -21,15 +25,15 @@
 
         <p></p>
                         
-        <label asp-for="device.ModelNumber"></label>
+        <label asp-for="device.ModelNumber">Model number</label>
         <input asp-for="@Model.device.ModelNumber" class="form-control" />
         <span asp-validation-for="@Model.device.ModelNumber" class="text-danger"></span>
 
-        <label asp-for="device.SerialNumber"></label>
+        <label asp-for="device.SerialNumber">Serial number</label>
         <input asp-for="@Model.device.SerialNumber" class="form-control" />
         <span asp-validation-for="@Model.device.SerialNumber" class="text-danger"></span>
 
-        <label asp-for="device.DevicePassword"></label>
+        <label asp-for="device.DevicePassword">Device password</label>
         <input asp-for="@Model.device.DevicePassword" class="form-control" />
         <span asp-validation-for="@Model.device.DevicePassword" class="text-danger"></span>
     </div>

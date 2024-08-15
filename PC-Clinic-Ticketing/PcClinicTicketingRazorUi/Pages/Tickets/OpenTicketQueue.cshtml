@@ -5,6 +5,7 @@
 }
 
 <h3>Ticket Queue</h3>
+Click Ticket Id for prior repair logs. Add repair log for each repair act or customer contact performed. Open tickets are removed from list when status is changed to 'Closed.'
 <table>
     <thead>
         <tr>
@@ -15,6 +16,7 @@
             <th>Ticket type</th>
             <th>Repair status</th>
             <th>Ticket time</th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
@@ -31,6 +33,7 @@
                 <td>@ticket.RepairStatus</td>
                 <td>@ticket.TicketTime</td>
                 <td><a asp-page="/Tickets/EditTicket" asp-route-id="@ticket.TicketId">Edit ticket</a></td>
+                <td><a asp-page="/RepairLogs/CreateRepairLog">Add repair log</a></td>
             </tr>
         </tbody>
     }

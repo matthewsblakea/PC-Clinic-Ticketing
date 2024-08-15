@@ -35,7 +35,7 @@ namespace PcClinicTicketingRazorUi.Pages.Users
 
                 var result = await httpClient.PostAsync($"api/users", userJson);
             }
-            return RedirectToPage("index");
+            return RedirectToPage("/users/GetTechnicians");
         }
     }
 }

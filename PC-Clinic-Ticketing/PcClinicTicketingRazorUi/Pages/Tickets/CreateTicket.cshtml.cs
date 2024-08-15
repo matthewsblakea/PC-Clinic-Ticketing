@@ -55,7 +55,7 @@ namespace PcClinicTicketingRazorUi.Pages.Tickets
 
                 var result = await httpClient.PostAsync($"api/Tickets", ticketJson);
             }
-            return RedirectToPage("index");
+            return RedirectToPage("/tickets/openticketqueue");
         }
     }
 }

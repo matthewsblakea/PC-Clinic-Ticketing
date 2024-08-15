@@ -3,11 +3,14 @@
 @{
 }
 
+<h3>Edit Device Information</h3>
 <form method="post">
     <div class="form-group">
         @Html.HiddenFor(x => x.device.DeviceId)
         @Html.HiddenFor(x => x.device.UserId)
 
+        Type of device
+        <p></p>
         @foreach (var x in System.Enum.GetValues(
         typeof(Models.Device.DeviceTypes)))
         {
@@ -19,15 +22,15 @@
         <span asp-validation-for="@Model.device.DeviceType" class="text-danger"></span>
 
         <p></p>
-        <label asp-for="@Model.device.ModelNumber"></label>
+        <label asp-for="@Model.device.ModelNumber">Model number</label>
         <input asp-for="@Model.device.ModelNumber" class="form-control" />
         <span asp-validation-for="@Model.device.ModelNumber" class="text-danger"></span>
 
-        <label asp-for="@Model.device.SerialNumber"></label>
+        <label asp-for="@Model.device.SerialNumber">Serial number</label>
         <input asp-for="@Model.device.SerialNumber" class="form-control" />
         <span asp-validation-for="@Model.device.SerialNumber" class="text-danger"></span>
 
-        <label asp-for="@Model.device.DevicePassword"></label>
+        <label asp-for="@Model.device.DevicePassword">Device password</label>
         <input asp-for="@Model.device.DevicePassword" class="form-control" />
         <span asp-validation-for="@Model.device.DevicePassword" class="text-danger"></span>
     </div>

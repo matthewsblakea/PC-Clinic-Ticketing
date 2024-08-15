@@ -50,7 +50,7 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
 
                 var result = await httpClient.PostAsync($"api/Devices", deviceJson);
             }
-            return RedirectToPage("index");
+            return RedirectToPage("/users/index");
         }
     }
 }

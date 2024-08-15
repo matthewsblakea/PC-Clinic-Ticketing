@@ -42,7 +42,19 @@ namespace PcClinicTicketingRazorUi.Pages.Users
 
                 var result = await httpClient.PutAsync($"api/users/{user.UserId}", userJson);
             }
-            return RedirectToPage("./index");
+
+            if (user.UserType == Models.User.UserTypes.Technician)
+            {
+                return RedirectToPage("/users/GetTechnicians");
+            }
+            else if  (user.UserType == Models.User.UserTypes.Customer)
+            {
+                return RedirectToPage("index");
+            }
+            else
+            {
+                return RedirectToPage("index");
+            }
         }
 
 

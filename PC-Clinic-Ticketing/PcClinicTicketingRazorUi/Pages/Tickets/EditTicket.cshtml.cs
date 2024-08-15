@@ -63,7 +63,7 @@ namespace PcClinicTicketingRazorUi.Pages.Tickets
 
                 var result = await httpClient.PutAsync($"api/Tickets/{ticket.TicketId}", ticketJson);
             }
-            return RedirectToPage("index");
+            return RedirectToPage("/Tickets/OpenTicketQueue");
         }
     }
 }

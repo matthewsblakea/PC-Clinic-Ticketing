@@ -3,16 +3,20 @@
 @{
 }
 
+<h3>Add Repair Log</h3>
+Enter repair log information
 <form method="post">
     <div class="form-group">
-        <label asp-for="repairLog.TicketId"></label>
+        <label asp-for="repairLog.TicketId">Ticket Id</label>
         <input asp-for="@Model.repairLog.TicketId" class="form-control" />
         <span asp-validation-for="@Model.repairLog.TicketId" class="text-danger"></span>
 
-        <label asp-for="repairLog.UserId"></label>
+        <label asp-for="repairLog.UserId">Technician Id</label>
         <input asp-for="@Model.repairLog.UserId" class="form-control" />
         <span asp-validation-for="@Model.repairLog.UserId" class="text-danger"></span>
 
+        Type of log
+        <p></p>
         @foreach (var x in System.Enum.GetValues(
         typeof(Models.RepairLog.LogTypes)))
         {
@@ -25,11 +29,11 @@
 
         <p></p>
                 
-        <label asp-for="repairLog.LogTime"></label>
+        <label asp-for="repairLog.LogTime">Log time</label>
         <input asp-for="@Model.repairLog.LogTime" class="form-control" />
         <span asp-validation-for="@Model.repairLog.LogTime" class="text-danger"></span>
 
-        <label asp-for="repairLog.LogNotes"></label>
+        <label asp-for="repairLog.LogNotes">Notes</label>
         <input asp-for="@Model.repairLog.LogNotes" class="form-control" />
         <span asp-validation-for="@Model.repairLog.LogNotes" class="text-danger"></span>
     </div>

@@ -3,7 +3,10 @@
 @{
 }
 
-<h3>Technicians</h3>
+<h3>Technician List</h3>
+<h3>This section is for administrators only...</h3>
+ Authentication doesn't work with the application's SQLite database so please don't look here if you're not supposed to :^)
+ <br />This is not an oversight, it is a limitation because we were asked to use SQLite for the application's database.
 <table>
     <thead>
         <tr>
@@ -19,7 +22,7 @@
     <tbody>
         @foreach (var user in Model.users)
         {
-            @if (user.UserType == Models.User.UserTypes.Technician)
+            @if (!(user.UserType == Models.User.UserTypes.Customer))
             {
                 <tr>
                     <td>@user.UserId</td>
