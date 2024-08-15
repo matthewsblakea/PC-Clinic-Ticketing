@@ -28,7 +28,7 @@ namespace PcClinicTicketingRazorUi.Models
         public string SerialNumber { get; set; }
         [Required]
         [StringLength(100)]
-        public string DevicePassword { get; set; }
+        public string? DevicePassword { get; set; }
         public virtual User? User { get; set; }
         public virtual List<Ticket>? Tickets { get; set; }
     }

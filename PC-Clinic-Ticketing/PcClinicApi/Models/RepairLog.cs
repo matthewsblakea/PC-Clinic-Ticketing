@@ -1,20 +1,24 @@
-﻿namespace PcClinicApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PcClinicApi.Models
 {
     public class RepairLog
     {
-            public enum LogTypes
-            {
-                Repair = 0,
-                Contact = 1
-            }
-
-            public int RepairLogId { get; set; }
-            public int? TicketId { get; set; }
-            public int? UserId { get; set; }
-            public LogTypes LogType { get; set; }
-            public DateTime LogTime { get; set; }
-            public string LogNotes { get; set; }
-            public virtual User? User { get; set; }
-            public virtual Ticket? Ticket { get; set; }
+        public enum LogTypes
+        {
+            Repair = 0,
+            Contact = 1
         }
+
+        public int RepairLogId { get; set; }
+        public int? TicketId { get; set; }
+        public int? UserId { get; set; }
+        public LogTypes LogType { get; set; }
+        [Required]
+        public DateTime LogTime { get; set; }
+        [Required]
+        public string LogNotes { get; set; }
+        public virtual User? User { get; set; }
+        public virtual Ticket? Ticket { get; set; }
+    }
 }

@@ -13,6 +13,7 @@
             <th>Log type</th>
             <th>Log time</th>
             <th>Log notes</th>
+            <th><a asp-page="/RepairLogs/CreateRepairLog">Add repair log</a></th>
         </tr>
     </thead>
     @foreach (RepairLog repairLog in Model.repairLogs)
@@ -25,6 +26,7 @@
                 <td>@repairLog.LogType</td>
                 <td>@repairLog.LogTime</td>
                 <td>@repairLog.LogNotes</td>
+                <td></td>
             </tr>
         </tbody>
     }

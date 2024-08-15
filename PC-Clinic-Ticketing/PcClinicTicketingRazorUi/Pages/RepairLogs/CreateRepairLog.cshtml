@@ -1,0 +1,37 @@
+﻿@page
+@model PcClinicTicketingRazorUi.Pages.RepairLogs.CreateRepairLog
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="repairLog.TicketId"></label>
+        <input asp-for="@Model.repairLog.TicketId" class="form-control" />
+        <span asp-validation-for="@Model.repairLog.TicketId" class="text-danger"></span>
+
+        <label asp-for="repairLog.UserId"></label>
+        <input asp-for="@Model.repairLog.UserId" class="form-control" />
+        <span asp-validation-for="@Model.repairLog.UserId" class="text-danger"></span>
+
+        @foreach (var x in System.Enum.GetValues(
+        typeof(Models.RepairLog.LogTypes)))
+        {
+            <label>
+                @(Html.RadioButtonFor<Models.RepairLog.LogTypes>
+                    (y => y.repairLog.LogType, (CreateRepairLog.LogTypes)x, null)) @x
+            </label>
+        }
+        <span asp-validation-for="@Model.repairLog.LogType" class="text-danger"></span>
+
+        <p></p>
+                
+        <label asp-for="repairLog.LogTime"></label>
+        <input asp-for="@Model.repairLog.LogTime" class="form-control" />
+        <span asp-validation-for="@Model.repairLog.LogTime" class="text-danger"></span>
+
+        <label asp-for="repairLog.LogNotes"></label>
+        <input asp-for="@Model.repairLog.LogNotes" class="form-control" />
+        <span asp-validation-for="@Model.repairLog.LogNotes" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add repair log</button>
+</form>

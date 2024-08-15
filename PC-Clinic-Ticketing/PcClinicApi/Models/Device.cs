@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Net.Sockets;
 
 namespace PcClinicApi.Models
 {
@@ -20,9 +21,15 @@ namespace PcClinicApi.Models
         public int DeviceId { get; set; }
         public int? UserId { get; set; }
         public DeviceTypes DeviceType { get; set; }
+        [Required]
+        [StringLength(100)]
         public string ModelNumber { get; set; }
+        [Required]
+        [StringLength(100)]
         public string SerialNumber { get; set; }
-        public string DevicePassword { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string? DevicePassword { get; set; }
         public virtual User? User { get; set; }
         public virtual List<Ticket>? Tickets { get; set; }
     }

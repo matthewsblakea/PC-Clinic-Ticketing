@@ -28,6 +28,7 @@ namespace PcClinicTicketingRazorUi.Models
         public TicketTypes TicketType { get; set; }
         public RepairStatuses RepairStatus { get; set; }
         public string? Location { get; set; }
+        [Required]
         public DateTime TicketTime { get; set; }
         public virtual Device? Device { get; set; }
         public virtual List<RepairLog>? RepairLogs { get; set; }

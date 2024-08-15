@@ -14,6 +14,7 @@ namespace PcClinicTicketingRazorUi.Models
         public int? TicketId { get; set; }
         public int? UserId { get; set; }
         public LogTypes LogType { get; set; }
+        [Required]
         public DateTime LogTime { get; set; }
         [Required]
         public string LogNotes { get; set; }

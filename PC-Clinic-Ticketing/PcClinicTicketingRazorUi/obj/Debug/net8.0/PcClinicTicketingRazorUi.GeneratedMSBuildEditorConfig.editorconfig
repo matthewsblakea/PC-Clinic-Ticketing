@@ -54,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/RepairLogs/CreateRepairLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwYWlyTG9nc1xDcmVhdGVSZXBhaXJMb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/RepairLogs/GetRepairLogsByTicketId.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwYWlyTG9nc1xHZXRSZXBhaXJMb2dzQnlUaWNrZXRJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,8 +90,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlQ3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/CreateTechnician.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlVGVjaG5pY2lhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/GetTechnicians.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcR2V0VGVjaG5pY2lhbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DOCS/CodeKY/Projects/PC-Clinic-Ticketing/PC-Clinic-Ticketing/PcClinicTicketingRazorUi/Pages/Users/GetUserById.cshtml]

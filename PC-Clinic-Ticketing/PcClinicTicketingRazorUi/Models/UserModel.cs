@@ -27,13 +27,10 @@ namespace PcClinicTicketingRazorUi.Models
         [Required]
         [StringLength(100)]
         public string Email { get; set; }
-        [Required]
         [StringLength(100)]
         public string? Address { get; set; }
-        [Required]
         [StringLength(100)]
         public string? City { get; set; }
-        [Required]
         [StringLength(100)]
         public string? State { get; set; }
         public virtual List<Device>? Devices { get; set; }

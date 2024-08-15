@@ -7,6 +7,8 @@
     <div class="form-group">
         @Html.HiddenFor(x => x.user.UserId)
 
+        @Html.HiddenFor(x => x.user.UserType)
+
         <label asp-for="user.FirstName"></label>
         <input asp-for="user.FirstName" class="form-control" />
         <span asp-validation-for="user.FirstName" class="text-danger"></span>

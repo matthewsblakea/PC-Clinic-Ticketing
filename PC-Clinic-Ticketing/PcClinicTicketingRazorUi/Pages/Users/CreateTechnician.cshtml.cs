@@ -1,20 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Newtonsoft.Json;
 using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
-using System.Net.Http;
 
 namespace PcClinicTicketingRazorUi.Pages.Users
 {
-    public class CreateCustomer : PageModel
+    public class CreateTechnician : PageModel
     {
         [BindProperty]
         public User user { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public CreateCustomer(IHttpClientFactory httpClientFactory)
+        public CreateTechnician(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -26,12 +24,12 @@ namespace PcClinicTicketingRazorUi.Pages.Users
         {
             if (!ModelState.IsValid)
             {
-                return  Page();
+                return Page();
             }
 
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                user.UserType = Models.User.UserTypes.Customer;
+                user.UserType = Models.User.UserTypes.Technician;
                 var userJson = JsonContent.Create(user);
 
                 var result = await httpClient.PostAsync($"api/users", userJson);

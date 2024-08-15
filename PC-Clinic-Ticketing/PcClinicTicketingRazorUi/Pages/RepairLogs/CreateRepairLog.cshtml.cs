@@ -1,20 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Newtonsoft.Json;
 using PcClinicTicketingRazorUi.Constants;
 using PcClinicTicketingRazorUi.Models;
-using System.Net.Http;
 
-namespace PcClinicTicketingRazorUi.Pages.Users
+namespace PcClinicTicketingRazorUi.Pages.RepairLogs
 {
-    public class CreateCustomer : PageModel
+    public class CreateRepairLog : PageModel
     {
         [BindProperty]
-        public User user { get; set; }
+        public RepairLog repairLog { get; set; }
+
+        public enum LogTypes
+        {
+            Repair = 0,
+            Contact = 1
+        }
+
+        [BindProperty]
+        public LogTypes LogType { get; set; }
 
         private IHttpClientFactory _httpClientFactory;
 
-        public CreateCustomer(IHttpClientFactory httpClientFactory)
+        public CreateRepairLog(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -26,15 +33,14 @@ namespace PcClinicTicketingRazorUi.Pages.Users
         {
             if (!ModelState.IsValid)
             {
-                return  Page();
+                return Page();
             }
 
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
-                user.UserType = Models.User.UserTypes.Customer;
-                var userJson = JsonContent.Create(user);
+                var repairLogJson = JsonContent.Create(repairLog);
 
-                var result = await httpClient.PostAsync($"api/users", userJson);
+                var result = await httpClient.PostAsync($"api/RepairLogs", repairLogJson);
             }
             return RedirectToPage("index");
         }
