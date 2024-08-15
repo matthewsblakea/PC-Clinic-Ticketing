@@ -9,7 +9,7 @@ It is prudent to remember that a business application like this should by necess
 The functionality that authentication and the use of tokens would provide if possible under the constraints would be access control: technicians and admins would have different permissions. Technicians and admins would have their own portals to log in to.
 Technicians would handle customer ticketing needs while admins would do the same in addition to managing technician accounts and possibly even the database itself through things like DELETE calls, which should not be exposed to technicians.
 Given this I made the conscious choice to omit the usage of the password property for users and the usage of any DELETE api calls. I wanted to be clear and point this out specifically so that it does not appear that I omitted these out of ignorance or neglect.
-I am very aware that in 'the real world' this aspect would be of utmost importance to a business application that is central to the business' model.
+I am very aware that in 'the real world' this aspect would be of utmost importance to a business application that is central to the business' model. It is also not the most pretty website because I had to learn web development in about a week to make this.
 
 To run the application the "HttpClient.BaseAddress" at line 17 in program.cs of the UI project may need to be changed to the appropriate localhost number of the API project. This can be found when running the API project in swagger, which should be pre-configured.
 Then change start-up projects for the solution to be both the API and UI projects, and hit run.
