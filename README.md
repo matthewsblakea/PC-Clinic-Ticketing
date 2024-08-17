@@ -12,7 +12,8 @@ Given this I made the conscious choice to omit the usage of the password propert
 I am very aware that in 'the real world' this aspect would be of utmost importance to a business application that is central to the business' model. It is also not the most pretty website because I had to learn web development in about a week to make this.
 
 To run the application the "HttpClient.BaseAddress" at line 17 in program.cs of the UI project may need to be changed to the appropriate localhost number of the API project. This can be found when running the API project in swagger, which should be pre-configured.
+The database is automatically created by an "ensurecreated" method in the API's program.cs at "c:\\PcClinicDb\\PcClinicDb.db". The .db file is created by this but as I found out "ensurecreated" does NOT create the PcClinicDb folder. The folder has to be made in your c: drive.
 Then change start-up projects for the solution to be both the API and UI projects, and hit run.
 
-Included in the project is a console test app (just in case), some basic unit tests to confirm that entity framework was correctly mapping foreign keys, the database itself (created at c:\\PcClinicDb\\PcClinicDb.db so you can delete it when you are done using it) , the program/API layer, and the razor pages UI.
+Included in the project is a console test app (just in case), some basic unit tests to confirm that entity framework was correctly mapping foreign keys, the database itself (created at "c:\\PcClinicDb\\PcClinicDb.db" so you can delete it when you are done using it) , the program/API layer, and the razor pages UI.
 The API calls are all asynchronous as they should be. An inspection of the APIs and the API calls will show the usage of asynchronically sending objects and lists of objects via JSON. Comments are included in the files to illustrate SOLID principles followed.
