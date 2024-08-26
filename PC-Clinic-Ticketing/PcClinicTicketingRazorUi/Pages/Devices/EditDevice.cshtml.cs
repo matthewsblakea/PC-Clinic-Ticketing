@@ -47,6 +47,7 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
 
         public async Task<IActionResult> OnPostAsync()
         {
+
             if (!ModelState.IsValid)
             {
                 return Page();
@@ -58,7 +59,7 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
 
                 var result = await httpClient.PutAsync($"api/Devices/{device.DeviceId}", deviceJson);
             }
-            return RedirectToPage("/users/index");
+            return RedirectToPage("/Devices/GetDevicesByUserId", new { id = device.UserId});
         }
     }
 }

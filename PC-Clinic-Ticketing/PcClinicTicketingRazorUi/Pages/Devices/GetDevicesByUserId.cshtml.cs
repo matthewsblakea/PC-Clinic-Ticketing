@@ -11,6 +11,9 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
         [BindProperty]
         public List<Device> devices { get; set; }
 
+        [BindProperty]
+        public int userId { get; set; }
+
         /* This HttpClientFactory is used in each api call to follow the dependency inversion principle. */
         private IHttpClientFactory _httpClientFactory;
 
@@ -23,6 +26,7 @@ namespace PcClinicTicketingRazorUi.Pages.Devices
         {
             using (var httpClient = _httpClientFactory.CreateClient(PcClinicConstants.httpClientFactoryKey))
             {
+                userId = id;
                 var result = await httpClient.GetAsync($"api/Devices/GetDevicesByUserId/{id}");
                 var jsonString = await result.Content.ReadAsStringAsync();
                 devices = JsonConvert.DeserializeObject<List<Device>>(jsonString);
