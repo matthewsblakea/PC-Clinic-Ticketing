@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PcClinicTicketingRazorUi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93730779e8d690dac478ef1ed59dadd5f85bf6f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc5207c5d267a4518ad14d5a7b1a8273d9ff4ec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PcClinicTicketingRazorUi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PcClinicTicketingRazorUi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,11 +5,12 @@
 }
 
 <h3>Repair logs by technician</h3>
+Click Ticket Id for ticket's repair logs
 <table>
     <thead>
         <tr>
-            <th>Repair log Id</th>
             <th>Ticket Id</th>
+            <th>Repair log Id</th>
             <th>Log type</th>
             <th>Log time</th>
             <th>Log notes</th>
@@ -20,8 +21,8 @@
 
         <tbody>
             <tr>
+                <td><a asp-page="/RepairLogs/GetRepairLogsByTicketId" asp-route-id="@repairLog.TicketId">@repairLog.TicketId</a></td>
                 <td>@repairLog.RepairLogId</td>
-                <td>@repairLog.TicketId</td>
                 <td>@repairLog.LogType</td>
                 <td>@repairLog.LogTime</td>
                 <td>@repairLog.LogNotes</td>

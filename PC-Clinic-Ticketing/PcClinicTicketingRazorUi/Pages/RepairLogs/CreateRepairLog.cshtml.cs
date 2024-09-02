@@ -43,7 +43,7 @@ namespace PcClinicTicketingRazorUi.Pages.RepairLogs
 
                 var result = await httpClient.PostAsync($"api/RepairLogs", repairLogJson);
             }
-            return RedirectToPage("/Tickets/OpenTicketQueue");
+            return RedirectToPage("/RepairLogs/GetRepairLogsByTicketId", new {id = repairLog.TicketId});
         }
     }
 }
