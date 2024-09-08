@@ -6,51 +6,54 @@
 
 <h3>Add Ticket</h3>
 Enter ticket information
+<p></p>
 <form method="post">
-    <div class="form-group">
-        <label asp-for="ticket.DeviceId">Device Id</label>
-        <input asp-for="@Model.ticket.DeviceId" class="form-control" />
-        <span asp-validation-for="@Model.ticket.DeviceId" class="text-danger"></span>
+<div class="form-group">
+    <label asp-for="ticket.DeviceId">Device Id</label>
+    <input asp-for="@Model.ticket.DeviceId" class="form-control" />
+    <span asp-validation-for="@Model.ticket.DeviceId" class="text-danger"></span>
 
-        Type of ticket
-        <p></p>
-        @foreach (var x in System.Enum.GetValues(
-        typeof(Models.Ticket.TicketTypes)))
-        {
-            <label>
-                @(Html.RadioButtonFor<Models.Ticket.TicketTypes>
-                    (y => y.ticket.TicketType, (CreateTicket.TicketTypes)x, null)) @x
-            </label>
-        }
-        <span asp-validation-for="@Model.ticket.TicketType" class="text-danger"></span>
+    <p></p>
+    Type of ticket
+    <br />
+    @foreach (var x in System.Enum.GetValues(
+    typeof(Models.Ticket.TicketTypes)))
+    {
+        <label>
+            @(Html.RadioButtonFor<Models.Ticket.TicketTypes>
+                (y => y.ticket.TicketType, (CreateTicket.TicketTypes)x, null)) @x
+        </label>
+    }
+    <span asp-validation-for="@Model.ticket.TicketType" class="text-danger"></span>
 
-        <p></p>
-        Status of ticket
-        <p></p>
+    <p></p>
+    Status of ticket
+    <br />
+    @foreach (var x in System.Enum.GetValues(
+    typeof(Models.Ticket.RepairStatuses)))
+    {
+        <label>
+            @(Html.RadioButtonFor<Models.Ticket.RepairStatuses>
+                (y => y.ticket.RepairStatus, (CreateTicket.RepairStatuses)x, null)) @x
+        </label>
+    }
+    <span asp-validation-for="@Model.ticket.RepairStatus" class="text-danger"></span>
 
-        @foreach (var x in System.Enum.GetValues(
-        typeof(Models.Ticket.RepairStatuses)))
-        {
-            <label>
-                @(Html.RadioButtonFor<Models.Ticket.RepairStatuses>
-                    (y => y.ticket.RepairStatus, (CreateTicket.RepairStatuses)x, null)) @x
-            </label>
-        }
-        <span asp-validation-for="@Model.ticket.RepairStatus" class="text-danger"></span>
+    <p></p>
+    <label asp-for="ticket.ReportedProblem">Reported problem</label>
+    <input asp-for="@Model.ticket.ReportedProblem" class="form-control" />
+    <span asp-validation-for="@Model.ticket.ReportedProblem" class="text-danger"></span>
 
-        <p></p>
+    <p></p>
+    <label asp-for="ticket.TechIntakeNotes">Notes</label>
+    <input asp-for="@Model.ticket.TechIntakeNotes" class="form-control" />
+    <span asp-validation-for="@Model.ticket.TechIntakeNotes" class="text-danger"></span>
 
-        <label asp-for="ticket.ReportedProblem">Reported problem</label>
-        <input asp-for="@Model.ticket.ReportedProblem" class="form-control" />
-        <span asp-validation-for="@Model.ticket.ReportedProblem" class="text-danger"></span>
-
-        <label asp-for="ticket.TechIntakeNotes">Notes</label>
-        <input asp-for="@Model.ticket.TechIntakeNotes" class="form-control" />
-        <span asp-validation-for="@Model.ticket.TechIntakeNotes" class="text-danger"></span>
-
-        <label asp-for="ticket.TicketTime">Ticket time</label>
-        <input asp-for="@Model.ticket.TicketTime" class="form-control" />
-        <span asp-validation-for="@Model.ticket.TicketTime" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Add ticket</button>
+    <p></p>
+    <label asp-for="ticket.TicketTime">Ticket time</label>
+    <input asp-for="@Model.ticket.TicketTime" class="form-control" />
+    <span asp-validation-for="@Model.ticket.TicketTime" class="text-danger"></span>
+</div>
+<p></p>
+<button type="submit" class="btn btn-primary">Add ticket</button>
 </form>

@@ -5,18 +5,22 @@
 
 <h3>Add Repair Log</h3>
 Enter repair log information
+<p></p>
 <form method="post">
     <div class="form-group">
+        <p></p>
         <label asp-for="repairLog.TicketId">Ticket Id</label>
         <input asp-for="@Model.repairLog.TicketId" class="form-control" />
         <span asp-validation-for="@Model.repairLog.TicketId" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="repairLog.UserId">Technician Id</label>
         <input asp-for="@Model.repairLog.UserId" class="form-control" />
         <span asp-validation-for="@Model.repairLog.UserId" class="text-danger"></span>
 
-        Type of log
         <p></p>
+        Type of log
+        <br />
         @foreach (var x in System.Enum.GetValues(
         typeof(Models.RepairLog.LogTypes)))
         {
@@ -27,15 +31,16 @@ Enter repair log information
         }
         <span asp-validation-for="@Model.repairLog.LogType" class="text-danger"></span>
 
-        <p></p>
-                
+        <p></p>                
         <label asp-for="repairLog.LogTime">Log time</label>
         <input asp-for="@Model.repairLog.LogTime" class="form-control" />
         <span asp-validation-for="@Model.repairLog.LogTime" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="repairLog.LogNotes">Notes</label>
         <input asp-for="@Model.repairLog.LogNotes" class="form-control" />
         <span asp-validation-for="@Model.repairLog.LogNotes" class="text-danger"></span>
     </div>
+    <p></p>
     <button type="submit" class="btn btn-primary">Add repair log</button>
 </form>

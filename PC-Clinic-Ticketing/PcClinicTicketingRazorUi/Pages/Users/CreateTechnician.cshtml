@@ -5,23 +5,28 @@
 
 <h3>Add Technician</h3>
 Enter technician information
+<p></p>
 <form method="post">
     <div class="form-group">
         <label asp-for="user.FirstName">First name</label>
         <input asp-for="user.FirstName" class="form-control" />
         <span asp-validation-for="user.FirstName" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="user.LastName">Last name</label>
         <input asp-for="user.LastName" class="form-control" />
         <span asp-validation-for="user.LastName" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="user.Email">Email address</label>
         <input asp-for="user.Email" class="form-control" />
         <span asp-validation-for="user.Email" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="user.Phone">Phone number</label>
         <input asp-for="user.Phone" class="form-control" />
         <span asp-validation-for="user.Phone" class="text-danger"></span>        
     </div>
+    <p></p>
     <button type="submit" class="btn btn-primary">Create technician account</button>
 </form>

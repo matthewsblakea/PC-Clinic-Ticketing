@@ -10,7 +10,7 @@
         @Html.HiddenFor(x => x.ticket.DeviceId)
 
         Type of ticket
-        <p></p>
+        <br />
         @foreach (var x in System.Enum.GetValues(
         typeof(Models.Ticket.TicketTypes)))
         {
@@ -23,8 +23,7 @@
 
         <p></p>
         Status of ticket
-        <p></p>
-
+        <br />
         @foreach (var x in System.Enum.GetValues(
         typeof(Models.Ticket.RepairStatuses)))
         {
@@ -36,18 +35,20 @@
         <span asp-validation-for="ticket.RepairStatus" class="text-danger"></span>
 
         <p></p>
-
         <label asp-for="@Model.ticket.ReportedProblem">Reported problem</label>
         <input asp-for="@Model.ticket.ReportedProblem" class="form-control" />
         <span asp-validation-for="@Model.ticket.ReportedProblem" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="@Model.ticket.TechIntakeNotes">Notes</label>
         <input asp-for="@Model.ticket.TechIntakeNotes" class="form-control" />
         <span asp-validation-for="@Model.ticket.TechIntakeNotes" class="text-danger"></span>
 
+        <p></p>
         <label asp-for="@Model.ticket.TicketTime">Ticket time</label>
         <input asp-for="@Model.ticket.TicketTime" class="form-control" />
         <span asp-validation-for="@Model.ticket.TicketTime" class="text-danger"></span>
     </div>
+    <p></p>
     <button type="submit" class="btn btn-primary">Edit ticket</button>
 </form>
